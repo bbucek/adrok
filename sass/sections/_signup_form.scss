@@ -1,0 +1,15 @@
+.mc-modal {
+  .mc-closeModal {
+    font-size: 1.3em;
+    z-index: 1000;
+    top: 1.5% !important; right: 5%;
+    color: black; //fix for ie 9
+    max-width: 500px; //fix for ie 9
+  }
+
+  @include respond-to-less-than($small) {
+    width: 95% !important;
+    top: 2.5% !important;
+    bottom: 0 !important;
+  }
+}

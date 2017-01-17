@@ -1,0 +1,61 @@
+#projects > .intro {
+  padding-bottom: 0;
+}
+.project_intro.intro_block {
+  padding: 16em 0 18em; margin-top: 0; margin-bottom: 0; height: auto; overflow: hidden;
+  background: black(15);
+
+  .map {
+    position: absolute; top: 0; left: 0; bottom: 0; width: 100%;
+    
+    svg {
+      margin: 1.5em 0 0 0; width: 70em; height: 45.05em;
+    }
+    .land { 
+      fill: $medium_grey;
+      transition: fill 2s;
+    }
+  }
+
+  @for $i from 0 through 11 {
+    .circle-#{$i} {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      width: 0px;
+      height: 0px;
+      margin-top: 0px;
+      margin-left: 0px;
+      border-radius: 50%;
+      // box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+      border: 5px solid black(13);
+      animation-duration: 24s;
+      animation-iteration-count: infinite;
+      animation-name: circle;
+      animation-delay: #{$i*2}s; 
+    }
+  }
+
+  @include at-breakpoint($mobile_break) {
+    padding: 14em 0 0; height: 39em;
+
+    .map svg { 
+      position: absolute; left: 50%; top: 0; margin-left: -27.5em; width: 55em; height: 35.39em;
+    }
+  }
+}
+
+@keyframes circle {
+  0% {
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    margin-left: -5px; 
+  }
+  100% {
+    width: 2000px;
+    height: 2000px;
+    margin-top: -1000px;
+    margin-left: -1000px; 
+  } 
+}

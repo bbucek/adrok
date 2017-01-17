@@ -1,0 +1,239 @@
+#blog {
+  $small_brkpt: 42em;
+  $medium_brkpt: 50em;
+
+  a { @extend %blog_link; }
+  h1, h2, h3, h4, h5 {
+    a, a:hover {
+      color: black; text-decoration: none;
+    }
+  }
+  .intro { 
+    min-height: 37em; z-index: -1;
+    @include respond-between(27.5em, $small_brkpt) {
+      .intro_image img { height: auto; width: 100%; }
+    }
+    &.home_intro {
+      @include respond-to-less-than($medium_brkpt) { min-height: 12em; }
+    }
+  }
+  .section {
+    .posting_info { font-family: $header_font; font-size: 1.4em; margin-bottom: $bl; }
+    .articles_wrapper {
+      padding: $bl*3; margin-bottom: $bl*8;
+      background-color: $bg_grey;
+    }
+    .article_list {
+      @include clearfix;
+      margin: 0;
+
+      @include respond-to-less-than($medium_brkpt) { width: 100%; }
+
+      h2 { @extend %header_2; margin-bottom: $bl; }
+      .strapline { font-size: 1.8em; }
+
+      .article {
+        @include clearfix;
+        padding-bottom: $bl*3; margin: $bl*3 0;
+        border-bottom: 2px solid $border_grey;
+        &.first { padding-top: $bl*3; border-top: 2px solid $border_grey; }
+        .article_image {
+          @include span-columns(4, 12); @include clearfix;
+          position: relative;
+          img {
+            position: relative; left: 50%;
+          }
+          @include respond-to-less-than($small_brkpt) {
+            @include reset-columns;
+            margin-bottom: $bl*2;
+            img { width: 100%; height: auto; left: 0; margin-left: 0 !important; }
+          }
+        }
+        .article_data {
+          @include span-columns(8, 12);
+          &.with_image { @include omega; }
+          @include respond-to-less-than($small_brkpt) { @include reset-columns; }
+
+          h3 { @extend %header_3_smaller; margin-bottom: $bl; }
+          a.read_more { @extend %blog_link_large; }
+          .excerpt p { margin-bottom: $bl; }
+        }
+      }
+    }
+    .pagination {
+      position: relative;
+      text-align: center;
+      a, span { @extend %blog_link_large; }
+      span {
+        color: black(30);
+        &:hover { color: black(30); }
+      }
+      .prev_link, .next_link { position: absolute; top: 0; }
+      .prev_link { left: 0; }
+      .next_link { right: 0; }
+      ul.page-numbers {
+        margin: 0 auto;
+        li {
+          @include inline-block;
+          margin: 0 10px;
+          @include respond-to-less-than($small_brkpt) { margin: 0 5px; }
+        }
+      }
+    }
+  }
+
+    /////////////////////////////////////////////////////
+    // Single post page
+    /////////////////////////////////////////////////////
+  &.single {
+    .main_content {
+      max-width: 75em; margin-top: -34em;
+    }
+    @include respond-to-less-than($medium_brkpt) {
+      .intro { display: none; }
+      .main_content { margin-top: 0; }
+    }
+    .single_article {
+      margin-bottom: $bl*3;
+      background-color: $bg_grey;
+      img, .wp-caption { width: inherit; max-width: 100%; height: auto; margin-bottom: $bl*2; }
+      h1, h2, h3 {
+        margin-bottom: $bl*2;
+        text-transform: none;
+      }
+      h1 {
+        @extend %header_2;
+        @include respond-to-less-than($small_brkpt) { font-size: 2.6em; }
+      }
+      h2 {
+        @extend %header_3;
+        @include respond-to-less-than($small_brkpt) { font-size: 2em; }
+      }
+      h3 {
+        @extend %header_4;
+        @include respond-to-less-than($small_brkpt) { font-size: 1.6em; }
+      }
+      p { margin-bottom: $bl*2; }
+      em { font-style: italic; }
+      blockquote {
+        margin-left: 30px; padding-left: 10px;
+        font-style: italic;
+        border-left: 4px solid $pink;
+        p { color: black(60); }
+      }
+      .header_image img { margin: 0; width: 100%; }
+      .post_content { padding: $bl*2 $bl*4; }
+      .post_details {
+        @include clearfix; margin-bottom: $bl*3;
+        @include respond-to-less-than($small_brkpt) {
+          font-size: 0.9em;
+          .back_link { float: none; margin-bottom: $bl; }
+          .posting_info { float: none;}
+        }
+      }
+      .back_link { 
+        @extend %blog_link_large; display: block; float: left;
+      }
+      .posting_info {
+        float: right; margin-bottom: 0; font-size: 1.7em;
+      }
+      .post_text {
+        padding-bottom: $bl*3; margin-bottom: $bl*3;
+        border-bottom: 2px solid $border_grey;
+        iframe { max-width: 100%; }
+        ul { @extend %paragraph; margin: 0 0 $bl*2 40px; list-style: outside disc none; }
+        .wp-caption {
+          p { font-size: 1.6em; color: $medium_grey; }
+          img { margin-bottom: $bl; }
+        }
+      }
+      .previous_and_next_posts {
+        @include clearfix;
+        padding-bottom: $bl*3; margin-bottom: $bl*3;
+        border-bottom: 2px solid $border_grey;
+        .prev_post { float: left; }
+        .next_post { float: right; text-align: right; }
+        .prev_post, .next_post { 
+          width: 40%; font-size: 0.9em;
+          & > a { display: block; @extend %blog_link_large; margin-bottom: $bl; }
+          & > h3 { @extend %header_3; margin: 0; padding: 0; text-transform: none; }
+          @include respond-to-less-than($small_brkpt) {
+            & > h3 { display: none; }
+            & > a { margin-bottom: 0; }
+          }
+        }
+      }
+      .comments {
+        h2 { 
+          @extend %header_2;
+          @include respond-to-less-than($small_brkpt) { font-size: 2.6em; }
+        }
+        .comment_list {
+          margin-bottom: $bl*2;
+          ul {
+            padding-left: 68px; // avatar width + padding
+            @include respond-to-less-than($small_brkpt) { padding-left: 30px; }
+          }
+          .comment-box { position: relative; }
+          .avatar {
+            position: absolute; top: 0; left: 0; width: 48px;
+            @include respond-to-less-than($small_brkpt) { display: none; }
+          }
+          .comment-body {
+            position: relative;
+            padding-left: 68px; // avatar width + padding
+            @include respond-to-less-than($small_brkpt) { padding-left: 0; }
+
+            .comment-header { @include clearfix; padding-bottom: $bl; }
+            .comment-details {
+              float: left;
+              font-family: $header_font; font-size: 1.5em; font-weight: bold; color: black(30); 
+            }
+            .comment-actions {
+              float: right;
+              a { @extend %blog_link_large; padding: 0; font-size: 1.5em; vertical-align: middle; }
+              .ac-comment-edit { 
+                @include inline-block;
+                a:before { content: " | "; color: #d9d9d9; }
+              }
+
+            }
+          }
+        }
+        #ajaxed-comments { @extend %paragraph; margin-bottom: $bl*2; }
+        #respond {
+          input, textarea {
+            display: block; width: 100%; margin: 0; padding: $bl 20px;
+            outline: none; border: none; resize: none;
+            font-family: $header_font; font-size: 2.2em;
+          }
+          label, h3 { 
+            clear: both; display: block; padding: 0; margin-bottom: $bl;
+            font-family: $header_font; font-size: 2.2em;
+            text-transform: none;
+            a { @extend %blog_link; }
+            @include respond-to-less-than($small_brkpt) { font-size: 2em; }
+          }
+          h3 small a { @extend %blog_link; float: right; font-size: 0.7em; }
+          .required { font-size: 0.8em; color: $light_grey; }
+          .comment-form-comment {
+            font-size: 1em;
+            label { display: none; }
+          }
+          .logged-in-as { width: 40%; float: right; font-family: $header_font; font-weight: bold; font-size: 1.5em; text-align: right; }
+          .field_wrapper {
+            float: left; width: 48%; margin-left: 4%; margin-bottom: $bl*2;
+            &.author_field { margin-left: 0; }
+            @include respond-to-less-than($small_brkpt) {
+              width: 100%; margin-left: 0; float: none;
+            }
+          }
+          .form-submit {
+            clear: left;
+            input { @extend %button; width: auto; }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+* { @include box-sizing(border-box); }
+
+body {
+  font-family: $body_font;
+}
+
+//*
+// Text styles
+//*
+h1 { @extend %header_1; }
+h2 {}
+h3 {}
+h4 { @extend %header_4; }
+p { @extend %paragraph; }
+a { cursor: pointer !important; }
+strong {}
+em {}
+
+//*
+// List styles
+//  Please define all versions of lists here.
+//*
+ul {
+
+  &.styled_list {}
+}
+ol {}
+
+//*
+// Form styles
+//*
+form {
+
+  input[type="text"]{}
+}
