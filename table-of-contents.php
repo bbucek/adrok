@@ -94,129 +94,129 @@
           </div><!-- /.header -->
 
           <div class="single-chapter">
-            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/about.php"><h3 class="single-chapter__title">01 About Adrok</h3></a>
+            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/01-about/about.php"><h3 class="single-chapter__title">01 About Adrok</h3></a>
             <ul class="single-chapter__links">
-              <li><a href="#">1.1 About Adrok</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/01-about/about-1.php">1.1 About Adrok</a></li>
             </ul><!-- /.single-chapter__links -->
             
           </div><!-- /.single_chapter -->
 
           <div class="single-chapter">
-            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/adr-technology.php"><h3 class="single-chapter__title">02 ADR Technology-Science</h3></a>
+            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/02-adr-technology/adr-technology.php"><h3 class="single-chapter__title">02 ADR Technology-Science</h3></a>
             <ul class="single-chapter__links">
-              <li><a href="#">2.1 Technology explained (ADR Technology-Science)_OMK_DRAFT - GS1 - OMK</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/02-adr-technology/adr-technology-1.php">2.1 Technology explained (ADR Technology-Science)_OMK_DRAFT - GS1 - OMK</a></li>
             </ul><!-- /.single-chapter__links -->
           </div><!-- /.single-chapter -->
 
           <div class="single-chapter">
-            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/australia.php"><h3 class="single-chapter__title">03 Australia</h3></a>
+            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/03-australia/australia.php"><h3 class="single-chapter__title">03 Australia</h3></a>
             <ul class="single-chapter__links">
-              <li><a href="#">3.1 Section front cover - Australia</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/03-australia/australia-1.php">3.1 Section front cover - Australia</a></li>
             </ul><!-- /.single-chapter__links -->
           </div><!-- /.single-chapter -->
 
           <div class="single-chapter">
-            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/coalbedmethane.php"><h3 class="single-chapter__title">04 CoalBedMethane BGG</h3></a>
+            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/04-coalbedmethane/coalbedmethane.php"><h3 class="single-chapter__title">04 CoalBedMethane BGG</h3></a>
             <ul class="single-chapter__links">
-              <li><a href="#">4.1 Resolving thin coal beds using ADR Poster</a></li>
-              <li><a href="#">4.2 Case Studies 2012</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/04-coalbedmethane/coalbedmethane-1.php">4.1 Resolving thin coal beds using ADR Poster</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/04-coalbedmethane/coalbedmethane-2.php">4.2 Case Studies 2012</a></li>
             </ul><!-- /.single-chapter__links -->
           </div><!-- /.single-chapter -->
           
           <div class="single-chapter">
-            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/coal.php"><h3 class="single-chapter__title">05 Coal</h3></a>
+            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/05-coal/coal.php"><h3 class="single-chapter__title">05 Coal</h3></a>
             <ul class="single-chapter__links">
-              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/coal-1.php">5.1 Case Study 00152CM_OMK</a></li>
-              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/coal-2.php">5.2 Case Study 00152EV_OMK</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/05-coal/coal-1.php">5.1 Case Study 00152CM_OMK</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/05-coal/coal-2.php">5.2 Case Study 00152EV_OMK</a></li>
             </ul><!-- /.single-chapter__links -->
           </div><!-- /.single-chapter -->
           
           <div class="single-chapter">
-            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/morocco.php"><h3 class="single-chapter__title">06 Gas Sands Morocco</h3></a>
+            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/06-morocco/morocco.php"><h3 class="single-chapter__title">06 Gas Sands Morocco</h3></a>
             <ul class="single-chapter__links">
-              <li><a href="#">6.1 Case Studies – Morocco Gas</a></li>
-              <li><a href="#">6.2 Cabre - Jim Ward report on ADR surveys in Morocco</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/06-morocco/morocco-1.php">6.1 Case Studies – Morocco Gas</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/06-morocco/morocco-2.php">6.2 Cabre - Jim Ward report on ADR surveys in Morocco</a></li>
             </ul><!-- /.single-chapter__links -->
           </div><!-- /.single-chapter -->
           
           <div class="single-chapter">
-            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/gold.php"><h3 class="single-chapter__title">07 Gold - CTO</h3></a>
+            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/07-gold/gold.php"><h3 class="single-chapter__title">07 Gold - CTO</h3></a>
             <ul class="single-chapter__links">
-              <li><a href="#">7.1 ASEG-PESA_2015_Abstract_Submission ADR RESULTS v3 SR-GC-BC</a></li>
-              <li><a href="#">7.2 Citigold case study</a></li>
-              <li><a href="#">7.3 ASEG PESA CITIGOLD ADROK PRES 2015 v6pptsml</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/07-gold/gold-1.php">7.1 ASEG-PESA_2015_Abstract_Submission ADR RESULTS v3 SR-GC-BC</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/07-gold/gold-2.php">7.2 Citigold case study</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/07-gold/gold-3.php">7.3 ASEG PESA CITIGOLD ADROK PRES 2015 v6pptsml</a></li>
             </ul><!-- /.single-chapter__links -->
           </div><!-- /.single-chapter -->
           
           <div class="single-chapter">
-            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/geology.php"><h3 class="single-chapter__title">08 General Geology - Jim Ward</h3></a>
+            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/08-geology/geology.php"><h3 class="single-chapter__title">08 General Geology - Jim Ward</h3></a>
             <ul class="single-chapter__links">
-              <li><a href="#">8.1 ADR Surveys 06-08-10 CLEAN</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/08-geology/geology-1.php">8.1 ADR Surveys 06-08-10 CLEAN</a></li>
             </ul><!-- /.single-chapter__links -->
           </div><!-- /.single-chapter -->
           
           <div class="single-chapter">
-            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/hard-rocks.php"><h3 class="single-chapter__title">09 Hard Rocks & Faults</h3></a>
+            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/09-hard-rocks/hard-rocks.php"><h3 class="single-chapter__title">09 Hard Rocks & Faults</h3></a>
             <ul class="single-chapter__links">
-              <li><a href="#">9.1 Case Study 00_GS_Draft</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/09-hard-rocks/hard-rocks-1.php">9.1 Case Study 00_GS_Draft</a></li>
             </ul><!-- /.single-chapter__links -->
           </div><!-- /.single-chapter -->
           
           <div class="single-chapter">
-            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/petroleum-oman.php"><h3 class="single-chapter__title">10 Petroleum - Oman</h3></a>
+            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/10-petroleum-oman/petroleum-oman.php"><h3 class="single-chapter__title">10 Petroleum - Oman</h3></a>
             <ul class="single-chapter__links">
-              <li><a href="#">10.1 IBD- ADROK- SPE Oman 260910</a></li>
-              <li><a href="#">10.2 Case Studies – Oman 1</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/10-petroleum-oman/petroleum-oman-1.php">10.1 IBD- ADROK- SPE Oman 260910</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/10-petroleum-oman/petroleum-oman-2.php">10.2 Case Studies – Oman 1</a></li>
             </ul><!-- /.single-chapter__links -->
           </div><!-- /.single-chapter -->
           
           <div class="single-chapter">
-            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/petroleum-oklahoma.php"><h3 class="single-chapter__title">11 Petroleum Oklahoma</h3></a>
+            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/11-petroleum-oklahoma/petroleum-oklahoma.php"><h3 class="single-chapter__title">11 Petroleum Oklahoma</h3></a>
             <ul class="single-chapter__links">
-              <li><a href="#">11.1 ADROK Oklahoma PR (1) 2010-August</a></li>
-              <li><a href="#">11.2 2010 Oklahoma Case Study</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/11-petroleum-oklahoma/petroleum-oklahoma-1.php">11.1 ADROK Oklahoma PR (1) 2010-August</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/11-petroleum-oklahoma/petroleum-oklahoma-2.php">11.2 2010 Oklahoma Case Study</a></li>
             </ul><!-- /.single-chapter__links -->
           </div><!-- /.single-chapter -->
           
           <div class="single-chapter">
-            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/onshore-uk.php"><h3 class="single-chapter__title">12 Onshore UK</h3></a>
+            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/12-onshore-uk/onshore-uk.php"><h3 class="single-chapter__title">12 Onshore UK</h3></a>
             <ul class="single-chapter__links">
-              <li><a href="#">12.1 00161 Case study write up_DL</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/12-onshore-uk/onshore-uk-1.php">12.1 00161 Case study write up_DL</a></li>
             </ul><!-- /.single-chapter__links -->
           </div><!-- /.single-chapter -->
           
           <div class="single-chapter">
-            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/underground.php"><h3 class="single-chapter__title">13 Underground mining TCK</h3></a>
+            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/13-underground/underground.php"><h3 class="single-chapter__title">13 Underground mining TCK</h3></a>
             <ul class="single-chapter__links">
-              <li><a href="#">13.1 Case Studies Teck underground mine</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/13-underground/underground-1.php">13.1 Case Studies Teck underground mine</a></li>
             </ul><!-- /.single-chapter__links -->
           </div><!-- /.single-chapter -->
           
           <div class="single-chapter">
-            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/water.php"><h3 class="single-chapter__title">14 Water</h3></a>
+            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/14-water/water.php"><h3 class="single-chapter__title">14 Water</h3></a>
             <ul class="single-chapter__links">
-              <li><a href="#">14.1 Going Green to Find Blue V 2.0</a></li>
-              <li><a href="#">14.2 RB 00140</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/14-water/water-1.php">14.1 Going Green to Find Blue V 2.0</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/14-water/water-2.php">14.2 RB 00140</a></li>
             </ul><!-- /.single-chapter__links -->
           </div><!-- /.single-chapter -->
           
           <div class="single-chapter">
-            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/testimonials.php"><h3 class="single-chapter__title">15 Testimonials client</h3></a>
+            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/15-testimonials/testimonials.php"><h3 class="single-chapter__title">15 Testimonials client</h3></a>
             <ul class="single-chapter__links">
-              <li><a href="#">15.1 Caithness+Petroleum</a></li>
-              <li><a href="#">15.2 Testimonials - clients</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/15-testimonials/testimonials-1.php">15.1 Caithness+Petroleum</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/15-testimonials/testimonials-2.php">15.2 Testimonials - clients</a></li>
             </ul><!-- /.single-chapter__links -->
           </div><!-- /.single-chapter -->
           
           <div class="single-chapter">
-            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/technical-papers.php"><h3 class="single-chapter__title">16 Technical Papers & Conference Papers</h3></a>
+            <a href="http://localhost:8888/adrok/together-we-rock-vol-1/16-papers/papers.php"><h3 class="single-chapter__title">16 Technical Papers & Conference Papers</h3></a>
             <ul class="single-chapter__links">
-              <li><a href="#">16.1 ASEG2015</a></li>
-              <li><a href="#">16.2 SEG2014</a></li>
-              <li><a href="#">16.3 IJRS 2013</a></li>
-              <li><a href="#">16.4 AAPG2012</a></li>
-              <li><a href="#">16.5 EAGE2011</a></li>
-              <li><a href="#">16.6 EAGE2009</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/16-papers/papers-1.php">16.1 ASEG2015</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/16-papers/papers-2.php">16.2 SEG2014</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/16-papers/papers-3.php">16.3 IJRS 2013</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/16-papers/papers-4.php">16.4 AAPG2012</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/16-papers/papers-5.php">16.5 EAGE2011</a></li>
+              <li><a href="http://localhost:8888/adrok/together-we-rock-vol-1/16-papers/papers-6.php">16.6 EAGE2009</a></li>
             </ul><!-- /.single-chapter__links -->
           </div><!-- /.single-chapter -->
           
