@@ -19,87 +19,351 @@
               </a>
               <div class="dropdown-content">
                 <ul>
-                  <li class="dropdown-item" ><a href="http://localhost:8888/adrok/together-we-rock-vol-1/01-about/about.html">01 About Adrok</a></li>
-                  <li class="dropdown-item" ><a href="http://localhost:8888/adrok/together-we-rock-vol-1/02-adr-technology/adr-technology.html">02 ADR Technology-Science</a></li>
-                  <li class="dropdown-item" ><a href="http://localhost:8888/adrok/together-we-rock-vol-1/03-australia/australia.html">03 Australia</a></li>
-                  <li class="dropdown-item sub-dropdown" ><a href="http://localhost:8888/adrok/together-we-rock-vol-1/04-coalbedmethane/coalbedmethane.html">04 CoalBedMethane BGG <div class="arrow">&rsaquo;</div></a>
+                  <li class="dropdown-item">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-1/01-about/about.html">01 About Adrok</a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../01-about/about.html">01 About Adrok</a>
+                    }
+                  </li>
+                  <li class="dropdown-item">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-1/02-adr-technology/adr-technology.html">02 ADR Technology-Science</a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../02-adr-technology/adr-technology.html">02 ADR Technology-Science</a>
+                    }
+                  </li>
+                  <li class="dropdown-item">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-1/03-australia/australia.html">03 Australia</a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../03-australia/australia.html">03 Australia</a>
+                    }
+                  </li>
+                  <li class="dropdown-item sub-dropdown">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-1/04-coalbedmethane/coalbedmethane.html">04 CoalBedMethane BGG <div class="arrow">&rsaquo;</div></a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../04-coalbedmethane/coalbedmethane.html">04 CoalBedMethane BGG <div class="arrow">&rsaquo;</div></a>
+                    }
                     <div class="sub-dropdown-content">
                       <ul>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/04-coalbedmethane/coalbedmethane-1.html">1 Resolving thin coal beds using ADR Poster</a></li>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/04-coalbedmethane/coalbedmethane-2.html">2 Case Studies 2012</a></li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/04-coalbedmethane/coalbedmethane-1.html">1 Resolving thin coal beds using ADR Poster</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../04-coalbedmethane/coalbedmethane-1.html">1 Resolving thin coal beds using ADR Poster</a>
+                          }
+                        </li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/04-coalbedmethane/coalbedmethane-2.html">2 Case Studies 2012</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../04-coalbedmethane/coalbedmethane-2.html">2 Case Studies 2012</a>
+                          }
+                        </li>
                       </ul>
                     </div>
                   </li>
-                  <li class="dropdown-item sub-dropdown" ><a href="http://localhost:8888/adrok/together-we-rock-vol-1/05-coal/coal.html">05 Coal <div class="arrow">&rsaquo;</div></a>
+                  <li class="dropdown-item sub-dropdown">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-1/05-coal/coal.html">05 Coal <div class="arrow">&rsaquo;</div></a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../05-coal/coal.html">05 Coal <div class="arrow">&rsaquo;</div></a>
+                    }
                     <div class="sub-dropdown-content">
                       <ul>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/05-coal/coal-1.html">1 Case Study 00152CM_OMK</a></li>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/05-coal/coal-2.html">2 Case Study 00152EV_OMK</a></li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/05-coal/coal-1.html">1 Case Study 00152CM_OMK</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../05-coal/coal-1.html">1 Case Study 00152CM_OMK</a>
+                          }
+                        </li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/05-coal/coal-2.html">2 Case Study 00152EV_OMK</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../05-coal/coal-2.html">2 Case Study 00152EV_OMK</a>
+                          }
+                        </li>
                       </ul>
                     </div>
                   </li>
-                  <li class="dropdown-item sub-dropdown" ><a href="http://localhost:8888/adrok/together-we-rock-vol-1/06-morocco/morocco.html">06 Gas Sands Morocco <div class="arrow">&rsaquo;</div></a>
+                  <li class="dropdown-item sub-dropdown">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-1/06-morocco/morocco.html">06 Gas Sands Morocco <div class="arrow">&rsaquo;</div></a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../06-morocco/morocco.html">06 Gas Sands Morocco <div class="arrow">&rsaquo;</div></a>
+                    }
                     <div class="sub-dropdown-content">
                       <ul>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/06-morocco/morocco-1.html">1 Case Studies – Morocco Gas</a></li>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/06-morocco/morocco-2.html">2 Cabre - Jim Ward report on ADR surveys in Morocco</a></li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/06-morocco/morocco-1.html">1 Case Studies – Morocco Gas</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../06-morocco/morocco-1.html">1 Case Studies – Morocco Gas</a>
+                          }
+                        </li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/06-morocco/morocco-2.html">2 Cabre - Jim Ward report on ADR surveys in Morocco</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../06-morocco/morocco-2.html">2 Cabre - Jim Ward report on ADR surveys in Morocco</a>
+                          }
+                        </li>
                       </ul>
                     </div>
                   </li>
-                  <li class="dropdown-item sub-dropdown" ><a href="http://localhost:8888/adrok/together-we-rock-vol-1/07-gold/gold.html">07 Gold - CTO <div class="arrow">&rsaquo;</div></a>
+                  <li class="dropdown-item sub-dropdown">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-1/07-gold/gold.html">07 Gold - CTO <div class="arrow">&rsaquo;</div></a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../07-gold/gold.html">07 Gold - CTO <div class="arrow">&rsaquo;</div></a>
+                    }
                     <div class="sub-dropdown-content">
                       <ul>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/07-gold/gold-1.html">1 ASEG-PESA_2015_Abstract_Submission ADR RESULTS v3 SR-GC-BC</a></li>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/07-gold/gold-2.html">2 Citigold case study</a></li>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/07-gold/gold-3.html">3 ASEG PESA CITIGOLD ADROK PRES 2015 v6pptsml</a></li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/07-gold/gold-1.html">1 ASEG-PESA_2015_Abstract_Submission ADR RESULTS v3 SR-GC-BC</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../07-gold/gold-1.html">1 ASEG-PESA_2015_Abstract_Submission ADR RESULTS v3 SR-GC-BC</a>
+                          }
+                        </li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/07-gold/gold-2.html">2 Citigold case study</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../07-gold/gold-2.html">2 Citigold case study</a>
+                          }
+                        </li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/07-gold/gold-3.html">3 ASEG PESA CITIGOLD ADROK PRES 2015 v6pptsml</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../07-gold/gold-3.html">3 ASEG PESA CITIGOLD ADROK PRES 2015 v6pptsml</a>
+                          }
+                        </li>
                       </ul>
                     </div>
                   </li>
-                  <li class="dropdown-item" ><a href="http://localhost:8888/adrok/together-we-rock-vol-1/08-geology/geology.html">08 General Geology - Jim Ward</a></li>
-                  <li class="dropdown-item" ><a href="http://localhost:8888/adrok/together-we-rock-vol-1/09-hard-rocks/hard-rocks.html">09 Hard Rocks & Faults</a></li>
-                  <li class="dropdown-item sub-dropdown" ><a href="http://localhost:8888/adrok/together-we-rock-vol-1/10-petroleum-oman/petroleum-oman.html">10 Petroleum - Oman <div class="arrow">&rsaquo;</div></a>
+                  <li class="dropdown-item">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-1/08-geology/geology.html">08 General Geology - Jim Ward</a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../08-geology/geology.html">08 General Geology - Jim Ward</a>
+                    }
+                  </li>
+                  <li class="dropdown-item">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-1/09-hard-rocks/hard-rocks.html">09 Hard Rocks & Faults</a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../09-hard-rocks/hard-rocks.html">09 Hard Rocks & Faults</a>
+                    }
+                  </li>
+                  <li class="dropdown-item sub-dropdown">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-1/10-petroleum-oman/petroleum-oman.html">10 Petroleum - Oman <div class="arrow">&rsaquo;</div></a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../10-petroleum-oman/petroleum-oman.html">10 Petroleum - Oman <div class="arrow">&rsaquo;</div></a>
+                    }
                     <div class="sub-dropdown-content">
                       <ul>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/10-petroleum-oman/petroleum-oman-1.html">1 IBD- ADROK- SPE Oman 260910</a></li>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/10-petroleum-oman/petroleum-oman-2.html">2 Case Studies – Oman 1</a></li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/10-petroleum-oman/petroleum-oman-1.html">1 IBD- ADROK- SPE Oman 260910</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../10-petroleum-oman/petroleum-oman-1.html">1 IBD- ADROK- SPE Oman 260910</a>
+                          }
+                        </li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/10-petroleum-oman/petroleum-oman-2.html">2 Case Studies – Oman 1</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../10-petroleum-oman/petroleum-oman-2.html">2 Case Studies – Oman 1</a>
+                          }
+                        </li>
                       </ul>
                     </div>
                   </li>
-                  <li class="dropdown-item sub-dropdown" ><a href="http://localhost:8888/adrok/together-we-rock-vol-1/11-petroleum-oklahoma/petroleum-oklahoma.html">11 Petroleum Oklahoma <div class="arrow">&rsaquo;</div></a>
+                  <li class="dropdown-item sub-dropdown">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-1/11-petroleum-oklahoma/petroleum-oklahoma.html">11 Petroleum Oklahoma <div class="arrow">&rsaquo;</div></a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../11-petroleum-oklahoma/petroleum-oklahoma.html">11 Petroleum Oklahoma <div class="arrow">&rsaquo;</div></a>
+                    }
                     <div class="sub-dropdown-content">
                       <ul>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/11-petroleum-oklahoma/petroleum-oklahoma-1.html">1 ADROK Oklahoma PR (1) 2010-August</a></li>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/11-petroleum-oklahoma/petroleum-oklahoma-2.html">2 2010 Oklahoma Case Study</a></li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/11-petroleum-oklahoma/petroleum-oklahoma-1.html">1 ADROK Oklahoma PR (1) 2010-August</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../11-petroleum-oklahoma/petroleum-oklahoma-1.html">1 ADROK Oklahoma PR (1) 2010-August</a>
+                          }
+                        </li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/11-petroleum-oklahoma/petroleum-oklahoma-2.html">2 2010 Oklahoma Case Study</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../11-petroleum-oklahoma/petroleum-oklahoma-2.html">2 2010 Oklahoma Case Study</a>
+                          }
+                        </li>
                       </ul>
                     </div>
                   </li>
-                  <li class="dropdown-item" ><a href="http://localhost:8888/adrok/together-we-rock-vol-1/12-onshore-uk/onshore-uk.html">12 Onshore UK</a></li>
-                  <li class="dropdown-item" ><a href="http://localhost:8888/adrok/together-we-rock-vol-1/13-underground/underground.html">13 Underground mining TCK</a></li>
-                  <li class="dropdown-item sub-dropdown" ><a href="http://localhost:8888/adrok/together-we-rock-vol-1/14-water/water.html">14 Water <div class="arrow">&rsaquo;</div></a>
+                  <li class="dropdown-item">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-1/12-onshore-uk/onshore-uk.html">12 Onshore UK</a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../12-onshore-uk/onshore-uk.html">12 Onshore UK</a>
+                    }
+                  </li>
+                  <li class="dropdown-item">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-1/13-underground/underground.html">13 Underground mining TCK</a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../13-underground/underground.html">13 Underground mining TCK</a>
+                    }
+                  </li>
+                  <li class="dropdown-item sub-dropdown">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-1/14-water/water.html">14 Water <div class="arrow">&rsaquo;</div></a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../14-water/water.html">14 Water <div class="arrow">&rsaquo;</div></a>
+                    }
                     <div class="sub-dropdown-content">
                       <ul>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/14-water/water-1.html">1 Going Green to Find Blue V 2.0</a></li>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/14-water/water-2.html">2 RB 00140</a></li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/14-water/water-1.html">1 Going Green to Find Blue V 2.0</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../14-water/water-1.html">1 Going Green to Find Blue V 2.0</a>
+                          }
+                        </li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/14-water/water-2.html">2 RB 00140</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../14-water/water-2.html">2 RB 00140</a>
+                          }
+                        </li>
                       </ul>
                     </div>
                   </li>
-                  <li class="dropdown-item sub-dropdown" ><a href="http://localhost:8888/adrok/together-we-rock-vol-1/15-testimonials/testimonials.html">15 Testimonials client <div class="arrow">&rsaquo;</div></a>
+                  <li class="dropdown-item sub-dropdown">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-1/15-testimonials/testimonials.html">15 Testimonials client <div class="arrow">&rsaquo;</div></a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../15-testimonials/testimonials.html">15 Testimonials client <div class="arrow">&rsaquo;</div></a>
+                    }
                     <div class="sub-dropdown-content">
                       <ul>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/15-testimonials/testimonials-1.html">1 Caithness+Petroleum</a></li>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/15-testimonials/testimonials-2.html">2 Testimonials - clients</a></li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/15-testimonials/testimonials-1.html">1 Caithness+Petroleum</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../15-testimonials/testimonials-1.html">1 Caithness+Petroleum</a>
+                          }
+                        </li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/15-testimonials/testimonials-2.html">2 Testimonials - clients</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../15-testimonials/testimonials-2.html">2 Testimonials - clients</a>
+                          }
+                        </li>
                       </ul>
                     </div>
                   </li>
-                  <li class="dropdown-item sub-dropdown" ><a href="http://localhost:8888/adrok/together-we-rock-vol-1/16-papers/papers.html">16 Technical Papers & Conference Papers <div class="arrow">&rsaquo;</div></a>
+                  <li class="dropdown-item sub-dropdown">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-1/16-papers/papers.html">16 Technical Papers & Conference Papers <div class="arrow">&rsaquo;</div></a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../16-papers/papers.html">16 Technical Papers & Conference Papers <div class="arrow">&rsaquo;</div></a>
+                    }
                     <div class="sub-dropdown-content">
                       <ul>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/16-papers/papers-1.html">1 ASEG2015</a></li>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/16-papers/papers-2.html">2 SEG2014</a></li>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/16-papers/papers-3.html">3 IJRS 2013</a></li>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/16-papers/papers-4.html">4 AAPG2012</a></li>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/16-papers/papers-5.html">5 EAGE2011</a></li>
-                        <li class="sub-dropdown-item"><a href="http://localhost:8888/adrok/together-we-rock-vol-1/16-papers/papers-6.html">6 EAGE2009</a></li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/16-papers/papers-1.html">1 ASEG2015</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../16-papers/papers-1.html">1 ASEG2015</a>
+                          }
+                        </li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/16-papers/papers-2.html">2 SEG2014</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../16-papers/papers-2.html">2 SEG2014</a>
+                          }
+                        </li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/16-papers/papers-3.html">3 IJRS 2013</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../16-papers/papers-3.html">3 IJRS 2013</a>
+                          }
+                        </li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/16-papers/papers-4.html">4 AAPG2012</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../16-papers/papers-4.html">4 AAPG2012</a>
+                          }
+                        </li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/16-papers/papers-5.html">5 EAGE2011</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../16-papers/papers-5.html">5 EAGE2011</a>
+                          }
+                        </li>
+                        <li class="sub-dropdown-item">
+                          @@if (context.level === 'first') {
+                            <a href="together-we-rock-vol-1/16-papers/papers-6.html">6 EAGE2009</a>
+                          }
+                          @@if (context.level === 'third') {
+                            <a href="../16-papers/papers-6.html">6 EAGE2009</a>
+                          }
+                        </li>
                       </ul>
                     </div>
                   </li>
@@ -109,20 +373,35 @@
 
             <li id="challenger-values-link" class="link ">
               <a href="#">
-                <span>Vol 2: Title goes here</span>
-                <img src="http://localhost:8888/adrok/images/tab2.jpg" >
+                <span>Vol 2: Coming soon...</span>
+                @@if (context.level === 'first') {
+                  <img src="../images/tab2.jpg" >
+                }
+                @@if (context.level === 'third') {
+                  <img src="../../../images/tab2.jpg" >
+                }
               </a>
             </li>
             <li id="our-ambition-link" class="link ">
-              <a href='#'>
-                <span>Vol 3: Coming soon...</span>
-                <img src="http://localhost:8888/adrok/images/tab3.jpg" >
+              <a href="#">
+                <span>Vol 2: Coming soon...</span>
+                @@if (context.level === 'first') {
+                  <img src="../images/tab3.jpg" >
+                }
+                @@if (context.level === 'third') {
+                  <img src="../../../images/tab3.jpg" >
+                }
               </a>
             </li>
             <li id="need-a-challenge-link" class="link last">
-              <a href='#'>
-                <span>Vol 4: Coming soon...</span>
-                <img src="http://localhost:8888/adrok/images/tab4.jpg" >
+              <a href="#">
+                <span>Vol 2: Coming soon...</span>
+                @@if (context.level === 'first') {
+                  <img src="../images/tab4.jpg" >
+                }
+                @@if (context.level === 'third') {
+                  <img src="../../../images/tab4.jpg" >
+                }
               </a>
             </li>
           </ul>
