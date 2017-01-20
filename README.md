@@ -16,10 +16,6 @@ $ npm install
 ```
 Enjoy!
 
-## Gulp
-
-If you want to know more about how is working our `gulpfile.js` please go to: [How's working our Gulp File](docs/README_gulp.md)
-
 ### Gulp features
 
 1. Ultra-fast compiling SCSS to CSS
