@@ -16,10 +16,6 @@ $ npm install
 ```
 Enjoy!
 
-## What's included?
-
-Workflow is currently based on [Bootstrap 4 (Alpha 6)](https://v4-alpha.getbootstrap.com). Structure of files is based on mobile-first coding. [Sass](http://sass-lang.com) is created using [BEM](http://getbem.com/introduction/) ideology. Repository is fully automated by [Gulp](http://gulpjs.com) tasks. Workflow includes [Bower](https://bower.io), so you can very easy include new plugins - thanks to Gulp all of JS and CSS files of Bower plugins are automatically included into main scripts and styles files.
-
 ## Gulp
 
 If you want to know more about how is working our `gulpfile.js` please go to: [How's working our Gulp File](docs/README_gulp.md)
