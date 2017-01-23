@@ -370,8 +370,13 @@
         </div><!-- /.dropdown-content -->
       </li>
 
-      <li id="challenger-values-link" class="link ">
-        <a href="together-we-rock-vol-2.html">
+      <li id="challenger-values-link" class="link dropdown">
+        @@if (context.level === 'first') {
+          <a href='together-we-rock-vol-2.html'>
+        }
+        @@if (context.level === 'third') {
+          <a href='../../together-we-rock-vol-2.html'>
+        }
           <span>Vol 2: Coming soon...</span>
           @@if (context.level === 'first') {
             <img src="images/tab2.jpg" >
@@ -380,6 +385,149 @@
             <img src="../../images/tab2.jpg" >
           }
         </a>
+        <div class="dropdown-content">
+          <ul>
+            <li class="dropdown-item sub-dropdown">
+              @@if (context.level === 'first') {
+                <a href="together-we-rock-vol-2/01-about/about.html">01 About Adrok <div class="arrow">&rsaquo;</div></a>
+              }
+              @@if (context.level === 'third') {
+                <a href="../01-about/about.html">01 About Adrok <div class="arrow">&rsaquo;</div></a>
+              }
+              <div class="sub-dropdown-content">
+                <ul>
+                  <li class="sub-dropdown-item">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-2/01-about/about-1.html">1 About Adrok</a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../01-about/about-1.html">1 About Adrok</a>
+                    }
+                  </li>
+                  <li class="sub-dropdown-item">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-2/01-about/about-2.html">2 e-flyer</a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../01-about/about-2.html">2 e-flyer</a>
+                    }
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown-item">
+              @@if (context.level === 'first') {
+                <a href="together-we-rock-vol-2/02-adr-technology/adr-technology.html">02 ADR Technology-Science</a>
+              }
+              @@if (context.level === 'third') {
+                <a href="../02-adr-technology/adr-technology.html">02 ADR Technology-Science</a>
+              }
+            </li>
+            <li class="dropdown-item">
+              @@if (context.level === 'first') {
+                <a href="together-we-rock-vol-2/03-eor/eor.html">03 Enhanced Oil Recovery (EOR), USA</a>
+              }
+              @@if (context.level === 'third') {
+                <a href="../03-eor/eor.html">03 Enhanced Oil Recovery (EOR), USA</a>
+              }
+            </li>
+            <li class="dropdown-item">
+              @@if (context.level === 'first') {
+                <a href="together-we-rock-vol-2/o4-geothermal/geothermal.html">04 Geothermal, New Zealand</a>
+              }
+              @@if (context.level === 'third') {
+                <a href="../o4-geothermal/geothermal.html">04 Geothermal, New Zealand</a>
+              }
+            </li>
+            <li class="dropdown-item">
+              @@if (context.level === 'first') {
+                <a href="together-we-rock-vol-2/05-gold-exploration/gold-exploration.html">05 Gold Exploration, Canada</a>
+              }
+              @@if (context.level === 'third') {
+                <a href="../05-gold-exploration/gold-exploration.html">05 Gold Exploration, Canada</a>
+              }
+            </li>
+            <li class="dropdown-item">
+              @@if (context.level === 'first') {
+                <a href="together-we-rock-vol-2/06-surface/surface.html">06 Near Surface – Geotechnical project</a>
+              }
+              @@if (context.level === 'third') {
+                <a href="../06-surface/surface.html">06 Near Surface – Geotechnical project</a>
+              }
+            </li>
+            <li class="dropdown-item">
+              @@if (context.level === 'first') {
+                <a href="together-we-rock-vol-2/o7-oil-sands/oil-sands.html">07 Oil Sands, Canada</a>
+              }
+              @@if (context.level === 'third') {
+                <a href="../o7-oil-sands/oil-sands.html">07 Oil Sands, Canada</a>
+              }
+            </li>
+            <li class="dropdown-item sub-dropdown">
+              @@if (context.level === 'first') {
+                <a href="together-we-rock-vol-2/08-papers/papers.html">08 Technical papers & conference papers<div class="arrow">&rsaquo;</div></a>
+              }
+              @@if (context.level === 'third') {
+                <a href="../08-papers/papers.html">08 Technical papers & conference papers<div class="arrow">&rsaquo;</div></a>
+              }
+              <div class="sub-dropdown-content">
+                <ul>
+                  <li class="sub-dropdown-item">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-2/08-papers/papers-1.html">8.1 EAGE2016</a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../08-papers/papers-1.html">8.1 EAGE2016</a>
+                    }
+                  </li>
+                  <li class="sub-dropdown-item">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-2/08-papers/papers-2.html">8.2 BGS North Atlantic Craton 2016</a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../08-papers/papers-2.html">8.2 BGS North Atlantic Craton 2016</a>
+                    }
+                  </li>
+                  <li class="sub-dropdown-item">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-2/08-papers/papers-3.html">8.3 PETEX2016</a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../08-papers/papers-3.html">8.3 PETEX2016</a>
+                    }
+                  </li>
+                  <li class="sub-dropdown-item">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-2/08-papers/papers-4.html">8.4 EAGE2016</a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../08-papers/papers-4.html">8.4 EAGE2016</a>
+                    }
+                  </li>
+                  <li class="sub-dropdown-item">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-2/08-papers/papers-5.html">8.5 Kansas Next Step</a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../08-papers/papers-5.html">8.5 Kansas Next Step</a>
+                    }
+                  </li>
+                  <li class="sub-dropdown-item">
+                    @@if (context.level === 'first') {
+                      <a href="together-we-rock-vol-2/08-papers/papers-6.html">8.6 General Concepts of Uncertainty</a>
+                    }
+                    @@if (context.level === 'third') {
+                      <a href="../08-papers/papers-6.html">8.6 General Concepts of Uncertainty</a>
+                    }
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div><!-- /.dropdown-content -->
+
+
+
       </li>
       <li id="our-ambition-link" class="link ">
         <a href="#">
