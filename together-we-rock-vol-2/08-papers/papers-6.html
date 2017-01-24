@@ -1,0 +1,122 @@
+@@include('header.html', {
+  "level": "third"
+})
+
+@@include('section-tabs.html', {
+  "level": "third"
+})
+
+<div class='section main_content'>
+  <div class="content">
+    <section class="single-article">
+      <ul class="breadcrumbs">
+        <li><a href="../../together-we-rock-vol-2.html">Contents</a><span class="breadcrumbs-arrow">&rsaquo;</span></li>
+        <li><a href="papers.html">08 Technical papers & conference papers</a><span class="breadcrumbs-arrow">&rsaquo;</span></li>
+        <li>8.6 General Concepts of Uncertainty</li>
+      </ul><!-- /.single-article__breadcrumb -->
+
+      <div class="single-article__content">
+
+        <h2>General Concepts of Uncertainty</h2>
+
+        <h3><b>Epistemology:</b>The science which deals with the origin and method of knowledge.</h3>
+
+        <p>This is the branch of philosophy that deals with the question of how it is that we know anything.  All humans take in vast of information all the time and have to make sense of various sensory signals, auditory, visual, taste, touch and smell, which are the classic stimuli known to everyone.  However, the human nervous system has developed to make rapid decisions on the information, without what might be described as a conscious awareness.  Nor is there any particular higher functioning intellectual capacity involved in moment to moment decision making – if you see a car driving directly towards you at speed, there is not time for thinking about the motivation of the driver, whether the car is coloured red, or blue, and what make and model the vehicle might be, instead you jump out of the way, hopefully.  Such higher-level analysis requires time, the human mind is able to contemplate time as something that is open to planning ahead for.</p>
+        <p>It is the ability on a human timescale to look far ahead and the ability to make future plans that marks most humans as being different from most other animals, there are always exceptions.  Therefore, humans need to be able to predict what an outcome is likely to be for such forward planning to be viable.  Here is where we meet the epistemological problem; how do we predict what a future outcome will be?  The classic way that the human race makes future predictions is to rely on past observations.  However, from a truly logical perspective this cannot be shown to be correct.  The philosopher David Hume used the example of the sun rising in the morning as his example.  Hume said that the fact that the sun has risen every morning previously in human experience is not a reason to believe that it will rise tomorrow morning.  The reasoning from Hume is somewhat arcane and a simpler example is that of Bertrand Russell using the feeding of a chicken: every morning of its existence a chicken is fed by a farmer, from the chicken’s perspective morning brings the farmer and food.  On the morning before a feast, the farmer arrives as usual to see the chicken, however on this occasion the farmer kills the chicken.  So, for every day of its life the chicken associates morning with a farmer and food, it is 100% correct in the association, until the day it is completely wrong.  The same phenomenon holds true for nearly all predictions, all our past experiences can be shown to be wrong by only one different answer.  Essentially, logic dictates that all previous experience is never enough to exclude the possibility that a future event will render all the preceding outcomes of a set of events null, due to one counteracting occurrence.  In technical terms this is called the problem of induction.</p>
+
+        <h3>Inference and Deduction</h3>
+
+        <p>There is a difference between inference and deduction, although they are often mixed up.  Deduction is understanding based purely observation, for example from finding green paint on a wall and a child holding a green paint brush next to it, it is possible to deduce that the child painted the wall.  Inference involves filling in gaps where observations are not present for example if the child was not holding a paint brush but it was known that no-one else was near the paint before the wall was covered. An incorrect inference, in other words an incorrect statement, is known as a fallacy.  Using the current example a fallacy could be that a gold fish, also present in the room, could have painted the wall.</p>
+
+        <h3>Statistics can be difficult to understand. </h3>
+
+        <p>People often have the ability to view information as having a certain meaning, but that meaning can be purely to do with the human involved.  Problems arise when people ascribe such meaning to information which the information does not actually provide.  A simple example of how humans can view random data as having a specific meaning is the phenomenon that occurs when a person sees a random pattern and puts an image onto that pattern, such as seeing a face, or an animal, in a cloud formation.  If the reader thinks about it they will probably have experienced this phenomenon themselves in one form, or another.  Statistics is a way of trying to take the observer outside of the process of analysis by allowing the numbers to give their own conclusions.  Although, even here the same set of numbers that are outputted from an analysis can be challenged as to what they mean.</p>
+
+        <h3>Statistical conclusions are always presented in terms of probability. </h3>
+
+        <p>"Statistics means never having to say you are certain. If a statistical conclusion ever seems certain, you are probably misunderstanding something. The whole point of statistics is to quantify uncertainty” (Dr. Harvey Motulsky, CEO and Founder of GraphPad Software). It is the difficulty associated with the induction problem, that is in being able to predict future events, which people attempt to solve by the use of probability theory and statistics.  The probability of something can be estimated mathematically, but it should be born in mind that only at both ends of the probability spectrum is there any certainty.  If there is a probability of p=1, then something is certain to happen, such as all humans die physically.  Whereas a probability of p=0 means that something cannot happen, e.g. a naked human living in outer space (without a spaceship).  All (?) other non-binary events can be given some sort of probability between the two extremes.</p>
+        <p>For most purposes, statistical sampling can be broken down into two related, but distinct, methods.  Firstly, we can have a population sample, whereby every single member of a population, or group of objects, is sampled.  If there was a population of one million, then every one of the million would be sampled.  Of course, population sized sampling is mostly too onerous to be viable.</p>
+        <p>The second is a random sample, with this a sample, which is less than the whole is taken, e.g. from one million we might sample twenty thousand and assume that this sample will reflect the whole population, if it is actually a random sample.</p>
+        <p>For both methods of sampling the maximum and minimum probability outcomes are one (1) and zero (0).  Why are probabilities given as a fraction of 1?  This outcome is due to the nature of the arithmetic involved, where the number of times a particular outcome occurs is divided by the total number of samples taken.  Therefore, if the entire population is twenty thousand and twenty thousand samples are taken (one from each member of the population) the maximum number of occurrences is twenty thousand, so twenty thousand divided by twenty thousand is equal to one.  While the least number of occurrences by definition is zero, so the outcome of zero divided by twenty thousand is zero.  Thus, all probabilities can have a value of zero, or one, or they lie between zero and one.</p>
+
+        <h3>Statistics give general conclusions from limited data.</h3>
+
+        <p>As stated above, it is often not feasible to sample a complete population, especially when the population is very large.  Therefore, we use inferential statistics to give us a reasonable answer to a question by allowing us to extrapolate from limited data to give a general conclusion.  This is different to “descriptive statistics", this form of statistic describes data without reaching any general conclusions.  Descriptive statistics do no try and reach general conclusions about a population from the data, they provide a simple summary of a sample and the observations made.  For example, the number of times a football player shoots at goal and how many of those shots score a goal would be a descriptive statistic.  In the football example this would be a Univariate analysis, meaning it has a single variable.  Bivariate analysis is when there is more than one variable. However, the branch of statistics that deals with fundamental uncertainties is inferential.</p>
+
+        <h3>A P value tests a null hypothesis, and can be hard to understand at first.</h3>
+
+        <p>The logic of a P value can seem strange at first. When testing whether two groups differ (different mean, different proportion, etc.), first hypothesize that the two populations are, in fact, identical. This is called the null hypothesis. Then ask: If the null hypothesis were true, how unlikely would it be to randomly obtain samples where the difference is as large (or even larger) than actually observed? If the P value is large, your data are consistent with the null hypothesis. If the P value is small, there is only a small chance that random chance would have created as large a difference as actually observed. This makes you question whether the null hypothesis is true.  </p>
+
+        <h3>"Statistically significant" does not mean the effect is great or has scientific importance.</h3>
+
+        <p>If the P value is less than 0.05 (an arbitrary, but well accepted threshold), the results are deemed to be statistically significant. That phrase sounds so definitive. But all it means is that, by chance alone, the difference (or association or correlation.) you observed (or one even larger) would happen less than 5% of the time. That's it. A tiny effect that is scientifically or clinically trivial can be statistically significant (especially with large samples). That conclusion can also be wrong, as you'll reach a conclusion that results are statistically significant 5% of the time just by chance.</p>
+
+        <h3>"Not significantly different" does not tell you an effect is absent, small or scientifically irrelevant.</h3>
+
+        <p>If a difference is not statistically significant, you can conclude that the observed results are not inconsistent with the null hypothesis. Note the double negative. You cannot conclude that the null hypothesis is true. It is quite possible that the null hypothesis is false, and that there really is a difference between the populations. This is especially a problem with small sample sizes.  It makes sense to define a result as being statistically significant or not statistically significant when you need to make a decision based on this one result. Otherwise, the concept of statistical significance adds little to data analysis.</p>
+
+        <h3>Theory of Sampling (TOS)</h3>
+
+        <p>In this section, we examine what difficulties are associated with what uncertainties can exist with the actual materials that are being sampled.  </p>
+        <p>All materials vary at some level, or scale.  At the very largest scale materials it can be easily demonstrated that there are many differences.  For example, if we think about planet earth itself it is obvious that there are many different materials and features that we can observe, be it oceans, forests, deserts, etc.  However, if we think about small scale objects the differences are not so simple to observe, but there are still differences.  If we took something which we would normally describe as being completely homogeneous, such as an element supplied by a chemicals manufacturer, this would still contain differences.  Here the differences would exist at the atomic level, not all individual atoms would be the same, different atomic structures of the same material are known as isotopes.  So even at the smallest scale there can be differences in a material. </p>
+        <p>Another way of thinking about difference is to go back to our visualisation of planet earth.  The further away from the planet we move, the more homogeneous it starts to look.  So, from the perspective of an observer on planet Saturn our earth would look like a homogeneous point of light and yet it is, as we know, anything but homogeneous.  This idea also helps us to understand why the information that we receive can deceive us into believing something that is not the case in reality.  Rather, the information that we interrogate can lead us to a false conclusion, when the information itself is limited.</p>
+        <p>The Theory of Sampling tries to take account of the way that we gain and interrogate information.  Descriptions exist as to what we have to take account of and how we should do this.  It has been shown that “many of the meso- and large-scale heterogeneity manifestations are deterministic, in that they result from specific processes, e.g. manufacturing/processing”. (Esbensen, K.H. & Wagner, C., Spectroscopy Europe, v.27, 2 &3, 2015)  </p>
+        <p>TOS attempts to identify and eliminate the errors that accrue from sampling of materials.  There is a definition that is applied whereby there are two sampling errors that arise from the heterogeneity that arises between different samples of the same material, called “correct sampling errors”.  Further errors occur in the sampling process itself. </p>
+        <p>It has been pointed out that in many instances there exists a structured heterogeneity, which can be layered/stratified.  This is an ideal description of what occurs in relation to geological sampling, where stratification is the norm.  In fact, there are very similar difficulties in sampling from other industries, such as for foodstuffs, where samples can be taken by coring of the item.  It is pointed out that the core itself can be very unrepresentative of the actual material being sampled for a variety of technical reasons (Ibid).</p>
+        <p>The interested reader will realise that a theory of sampling and its difficulties can also be applied to statistical analysis.  We are all familiar of how opinion polls can be completely misleading, especially when it comes to political elections.  In the UK we have had numerous examples of the pollsters getting outcomes completely wrong and this can be seen to be because the samples that have been taken are not actually representative, despite the best efforts of the psephologists. </p>
+
+        <h3>Central Limit Theorem and the Law of Large Numbers</h3>
+
+        <p>In specified conditions the arithmetic mean of a large dataset of independent random variables with a defined finite value and variance regardless of the underlying distribution will have an increasingly normal distribution as the number of variables increases.  This is the reason that many statistical tests work.  It is important because it allows for the distribution of certain statistics even if we know very little about the sample distribution.</p>
+        <p>The Law of Large Numbers states how repeatable an experiment is.  If the data converges to the expected value this is known as the weak law of large numbers (Khintchine’s law) and this can happen an infinite number of times.  If the data almost (but not quite) converges to the expected or average values then this is known as the strong law of large numbers.  This will happen if there are an infinite number of experiments rather than an infinite number of outcomes in the case of the weak law of numbers.</p>
+        <p>The mean of a sampled dataset will eventually converge to the distribution mean as the sample size increases.  There are different versions of this rule depending on the mode of convergence applied.</p>
+        <p><b>In the above discussion, there are examples of uncertainty.  The most fundamental of which is that there is no certainty that the null hypothesis is true.  This brings the discussion onto the perceived knowns and unknowns associated with measuring physical phenomena using the example of waves and particles.</b></p>
+        <p><b>Of particular relevance to Adrok is Heisenberg’s Uncertainty principal.</b> Heisenberg’s Uncertainty principle explains the limitations associated with measuring anything, in particular sub-atomic particles</p>
+        <p>This is composed of 3 statements:</p>
+        <ul>
+            <li>Impossible to prepare states in which position and momentum are well localized simultaneously. </li>
+            <li>Impossible to measure both position and momentum at the same time. </li>
+            <li>Impossible to measure position without changing momentum and vice versa.</li>
+        </ul>
+        <p>In other words, the more that is known about the position of a particle the less is known about its momentum because the measurement of the first position and momentum constitutes an instance of a joint measurements of some observations.  It also implies that there is no method of identifying what the fundamental state of a system is only what may occur during observation.  Heisenberg’s Uncertainty principal is observed most easily on the microscopic level and so is of relevance to Adrok.  For harmonic analysis, the uncertainty principle implies it is impossible to locate the Fourier transform and the value of a function.  When increasing the signal to noise ratio this implies it is impossible to gain both high temporal resolution and high frequency resolution.  Therefore, a compromise always needs to be reached.</p>
+
+        <h3>Uncertainties associated with mathematical modelling of geophysical data</h3>
+        <p><b>When modelling geophysical data such as waves, the following are known knowns or assumptions.</b></p>
+
+        <ul>
+            <li>Speed of light is constant. </li>
+            <li>GPR often contaminated with uncertainties along the waveform traces</li>
+            <li>Data uncertainties assumed to be normally distributed with a temporal correlation among the individual waveform traces.</li>
+        </ul>
+        <p>In order to explain how waves propagate, James Clerk Maxwell devised four partial differential equations with unknown multi variate functions, in other words mathematical functions with more than one variable.  These four equations are then integrated together to with the Lorentz force law to explain the fundamentals of optical and electronic technologies.  The four equations are:</p>
+        <ul>
+            <li><b>Gauss Law.</b> Gauss Law states how an electric field behaves around an electric charge</li>
+            <li><b>Gauss Law of Magnetic Fields (modified by Maxwell)</b> The divergence of a magnetic field is equal to magnetic charge (= 0).</li>
+            <li><b>Faradays Law (modified by Maxwell)</b> Magnetic fields give rise to an electric current and vice versa. A change in magnetic field through time will change the electric field in space and vice versa.</li>
+            <li><b>Amperes’s Law</b> A time changing electric current causes a magnetic field that circulates.</li>
+        </ul>
+        <p>In summary, a time varying divergence-field gives rise to a magnetic field.  This time varying magnetic field gives rise to an electric field- <u> the propogation of electro-magnetic waves.</u></p>
+        <p>A total of six unknowns are the components of the electromagnetic field, the three components of the total electric field and the three components of the total magnetic field.  These dependant values are based on four independent values, meaning there are 24 boundary conditions. Electromagnetic parameters are assumed to be non-linear over a full range of parameters but may be linear for a small but unspecified range of parameters. These four independent values are the propagation of the magnetic field in the x, y and z directions as well as the propagation of the wave over time (t).</p>
+        <p>The following procedure outlines some methods for identifying these unknown components.</p>
+
+        <h2>Solutions to working with or identifying the unknowns (reducing uncertainty)</h2>
+
+        <h3>Markov Chain Monte Carlo (MCMC)</h3>
+
+        <p>Markov Chains are sequence of random elements (stochastic process) in which future states are independent of past states given the present state (Geyer,C.  Introduction to Markov Chain Monte Carlo 2011).  The first MCMC algorithm ran on a computer called MANIAC (Mathematical Analyzer, Numerical Integrator and Computer) (Robert, C. and Casella, G. Statistical Science v 26, 1, 102-115 2011).  Markov chains start from an arbitrary value and run in until this arbitrary value has been forgotten.  The aim is to solve the problems of sample generation from a probability distribution (Tiboaca, D., Green, P.L., Barthorpe, R.J., Worden, K <i>Proceeding of IMAC XXXII, Conference and Exposition of Structural Dynamics</i>, 3-6 2014).</p>
+
+        <h3>Metropolis-Hastings-Green Algorithm</h3>
+
+        <p>Is a specific MCMC method for obtaining a sequence of observations or samples from a probability distribution where direct sampling is difficult.  As more samples are output this more closely resembles the necessary probability distribution. This works on the assumption that the exact requirements of a system are not needed to produce a copy of that system.  A Metropolis Hastings Green Algorithm produces an MCMC which has a stationary distribution with a reversible transitionary state in other words two separate iterations.  Each state should also be aperiodic with a finite number of stages to reach that same state.  There are two stages to completing this: A new set of observations is proposed and secondly the probability distribution across the various iterations of the new state being accepted or rejected is given.  The criteria for determining if the new state is accepted depends on the distribution of these samples.  In a one dimension Gaussian (normal) distributed dataset the acceptance is 50%, this decreases to 23% in n dimensions at the target distribution.</p>
+
+        <h3>Conclusions</h3>
+
+        <p>Adrok’s technology obeys the fundamentals of Maxwell’s Law, while areas of uncertainty have been identified in both sampling and the process of extracting useful information about the waves and their propagation.  In the final analysis, Adrok’s technology uses the same basic principles as those that apply to telescopes, radios, television wireless technology and so on.  And is therefore compatible with models of how the electromagnetic spectrum interacts with other components of the physical world.</p>
+        <p>However, it should always be borne in mind that all information is fundamentally uncertain in some respect, as has been outlined in the preceding paper.  Nonetheless, we must always aim to get as close to the actual case as is possible, using the tools at our disposal.</p>
+
+      </div><!-- /.single-article__content -->
+    </section><!-- /.single-article -->
+  </div>
+</div>
+
+@@include('footer.html')
