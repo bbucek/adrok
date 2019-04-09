@@ -1,0 +1,44 @@
+@@include('header.html', {
+  "level": "third"
+})
+
+@@include('section-tabs.html', {
+  "level": "third"
+})
+
+<div class='section main_content'>
+  <div class="content">
+    <section class="single-article">
+      <ul class="breadcrumbs">
+        <li><a href="../../together-we-rock-vol-2.html">Contents</a><span class="breadcrumbs-arrow">&rsaquo;</span></li>
+        <li><a href="papers.html">08 Technical papers & conference papers</a><span class="breadcrumbs-arrow">&rsaquo;</span></li>
+        <li>8.4 EAGE2016</li>
+      </ul><!-- /.single-article__breadcrumb -->
+
+      <div class="single-article__content">
+
+        <a href="../../pdf-files/together-we-rock-vol-2/08-papers/piers20152ppt.pdf" download="../../pdf-files/together-we-rock-vol-2/08-papers/piers20152ppt.pdf" class="adrok-button adrok-button__full-background adrok-button__full-background--pink">Download piers20152ppt</a>
+
+        <h2>Numerical simulation of aquifer detection using low frequency pulsed radar</h2>
+
+        <p>K. van den Doel<sup>1</sup>, M. Robinson<sup>2</sup></p>
+        <p><sup>1</sup>University of British Columbia, Vancouver, Canada <br><sup>2</sup>Adrok Ltd, Edinburgh, United Kingdom</p>
+
+        <h3>Abstract</h3>
+
+        <p>We describe two numerical models of the detection of aquifers under limestone using low frequency pulsed radar which we use for experimental design, depth range estimations, and testing data analysis methods. The first model implements a 1D FDTD scheme for Maxwell’s equations coupled to a ground model incorporating dielectric permittivity, conductivity, and a Debye polarization model. The material parameters of the model were obtained from in situ measurements through limestone pillars performed underground in a mine [2]. The input to the simulation is the measured output of a low frequency pulsed radar system manufactured by Adrok Ltd. The complicated radar pulse produced by the transmitter contains frequencies from 3 to 65MHz and the low frequency component allows for deep penetration in suitable materials, see for example [1], where a similar simulation for deep surface probing on Mars is described.</p>
+        <p>The simulated pulse propagates through the limestone with a relative permittivity avaraging εr = 6 and is reflected by an aquifer which we model as a layer with εr = 40. After reflecting off the wet layer the pulse travels back up and is measured on the surface as a time domain trace. Synthetic noise calibrated to match measurements from the actual equipment is added to the computed result. In normal operation mode (STARE), 8000 traces are stacked, and the reflection is detected from the data using either visual identification of the return or, when the return signal is very weak, by analysing the correlations between stacked traces. Results indicate the aquifer is detectable up to about 350m depth and that extending the range to 500m depth is achievable by increasing the stacking by a factor 25. Detecting a reflection from 650m would require stacking 2000 × 8000 traces, and down to 800m would require 100000 × 8000 traces. Assuming a trace length of 20μs, suitable for detecting reflections up to 1km for εr ≤ 9, the latter would require a theoretical minimum acquisition time of about 5 hours, which is probably close to what is practical.</p>
+        <p>In order to convert the reflection time of the pulse to depth we need to know the velocity which is governed by the relative permittivity ε. In some practical applications this may be known from geology, but if it is not it can be obtained from a WARR scan, where measurements are taken with transmitter and receiver at increasing separations and using a normal moveout method or a velocity spectrum (as used in seismic) to estimate velocity and εr. Because of the high frequency components in the pulse and the high accuracy required of the FDTD simulator (due to the large dynamic range that needs to be simulated) the required grid spacing is about 5cm and large com- putational resources would be required for a full 2D FDTD simulation which is why we model the WARR scan with a raytracing method. Simulated data is rendered by propagating the measured input pulse through all rays that reach the surface using computed reflection/transmission coeffi- cients and an attenuation filter derived from the FDFT model. The ground is modeled as a layer with mean εr = 6 with random fluctuations with standard deviation 0.5 at intervals which are distributed exponentially with a mean of 5m. This models irregularities and causes complicated backscatter similar to what is observed in practice. From a velocity spectrum analysis (suitably modified to incorporate radar specific losses) it appears that the velocity can be estimated from the backscatter up to about 150m down and from the stronger aquifer reflection at 350m with about 5% accuracy leading to a similar accuracy in depth estimation.</p>
+
+      </div><!-- /.single-article__content -->
+      <div class="footnotes">
+        <ol>
+            <li class="note">V. Ciarletti, B. Martinat, A. Reineix, J. J. Berthelier, and R. Ney. Numerical simulation of the operation of the gpr experiment on netlander. <i>JOURNAL OF GEOPHYSICAL RESEARCH</i>, 108(E4, 8028):doi:10.1029/2002JE00186, 2003.</li><!-- /.note -->
+            <li class="note">K. van den Doel, J. Jansen, M. Robinson, G. C. Stove, and G. D. C. Stove. Ground penetrating abilities of broadband pulsed radar in the 1-70MHz range. In <i>SEG Technical Program Expanded Abstracts 2014, Denver</i>, pages 1770–1774, 2014.</li><!-- /.note -->
+        </ol>
+      </div><!-- /.single-article__footer -->
+    </section><!-- /.single-article -->
+  </div>
+</div>
+
+@@include('footer.html')

@@ -1,0 +1,113 @@
+body#projects {
+  .navigation_block {
+    .secondary_nav {
+      ul {
+        li.active:not(:last-child) {
+          &:after {
+            display: none;
+          }
+        }
+      }
+      
+    }
+  }
+}
+
+.projects {
+  .project {
+    @include span-columns(12 omega, 12);
+    position: relative; overflow: hidden; margin-bottom: 4em; min-height: 350px;
+    
+    .image {
+      width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 0; overflow: hidden;
+      background-position: 50% 50%;
+      
+      
+      img {
+        width: 100%;
+      }
+    }
+    
+    .description {
+      background: black;
+      background: rgba(0, 0, 0, 0.5); position: absolute; margin-left: 50%; right: 0; top: 0; bottom: 0; width: 50%; z-index: 1; overflow: hidden;
+      
+      .content {
+        padding: 4em; background: none; margin-bottom: 0;
+        
+        h3 { @extend %header_3; color: white; margin-bottom: 0.7em; }
+        p { @extend %paragraph; color: white; }
+      }
+      
+      ul.thumbnails {
+        width: 88%; bottom: -4em; margin: 0 auto; position: relative; margin-top: 3em; //border:1px solid red;
+        li {
+          @include opacity(1);
+          //@include transition(all 0.3s ease);
+          width: 20%; height: 60px; display: block; float: left; text-align: center; //border: 1px solid green;
+          &:last-child {
+            //margin-right: 0;
+          }
+          a {
+            display: inline-block;
+            width: 56px; height: 56px; border: 2px solid $border_grey; overflow: hidden;
+            
+            @include at-breakpoint($main_navigation_break) {
+              width: 44px; height: 44px;
+            }
+            
+            img {
+              width: 200%;
+            }
+          }
+          &:hover, &.active {
+            @include opacity(1.0);
+            a { border: 2px solid $pink; }
+          }
+        }
+      }
+    }
+    
+    &.one-image {
+      .description {
+        .ul.thumbnails {
+          display: none;
+        }
+      }
+    }
+    
+    @include at-breakpoint($mobile_break) {
+      height: auto; 
+      
+      .image {
+        position: static; height: 237px;
+      }
+      
+      .description {
+        position: relative; width: 100%; height: auto; background: #f2f2f2; padding-top: 92px; margin-left: 0;
+        
+        .content {
+          height: auto; padding: 3em;
+          h3, p { color: black; }
+        }
+        
+        ul.thumbnails {
+          height: 92px; position: absolute; top: 0; left: 0; bottom: auto; width: 100%; background: #262626; padding: 0 20px; margin-top: 0;
+          li {
+            margin-top: 17px;
+            a {
+              width: 56px; height: 56px;
+            }
+          }
+        }
+      }
+      
+      &.one-image {
+        .description {
+          padding-top: 0;
+        }
+      }
+      
+    }
+  }
+}

@@ -1,0 +1,455 @@
+%wrapper {
+  @include container;
+  @include at-breakpoint($main_navigation_break) {
+    padding-left: 3em; padding-right: 3em;
+  }
+}
+#main_header {
+  @include pie-clearfix;
+  height: 7*$bl;
+  .main_header_content {
+    @extend %wrapper;
+    .links {
+      float: left; padding: 2*$bl 1em;
+      #homepage_link {
+        width: image-width('logo_standard.jpg');
+        height: image-height('logo_standard.jpg');
+        @include replace-text(image-url('logo_standard.jpg'));
+        
+        @include respond-to-retina( ) {
+          @include replace-text(image-url('logo_retina.jpg'));
+          background-size: cover;
+        }
+        
+        display:block; float:left;
+      }
+      #show_mobile_nav {
+        @include unstyled-link;
+        @include link-colors(black(40), black(15));
+        display:none; float:right;
+        font-size: 3em;
+        &:before { @extend %navigation_icon; }
+      }
+    }
+  }
+  @include at-breakpoint($main_navigation_break) {
+    height: auto;
+    .main_header_content {
+      padding: 0;
+      .links {
+        @include container;
+        float:none;
+        #show_mobile_nav {
+          display: block;
+        }
+      }
+    }
+  }
+}
+#main_navigation {
+  margin: 2.7*$bl 0 0; padding-right: 1em; float: right;
+  ul {
+    @include pie-clearfix;
+    li {
+      @extend %header_5;
+      float:left; display:block; margin-left:20px;
+      &.active { border-bottom: 0.4em solid $pink;}
+      a {
+        @include unstyled-link;
+        @include link-colors(black(40), black(15))
+      }
+    }
+  }
+  @include at-breakpoint($main_navigation_break) {
+    clear: both; margin: 0; padding: 0; float:none; display: none;
+    ul {
+      @include span-columns(12 omega, 12);
+      border-top: 1px solid black(90);
+      width: 100%;
+      li {
+        float:none; margin: 0; padding: 0;
+        &.active {
+          border: 0;
+          a {
+            background: $pink; color: white;
+            &:hover { background: $pink; color: white; }
+          }
+        }
+        a {
+          @include link-colors(white, white);
+          display: block; width:100%; padding: 1em 2em;
+          background: white; color: black(30);
+          border-bottom: 1px solid black(90);
+          &:hover {
+            background: black(90); color: black(20);
+          }
+        }
+      }
+    }
+  }
+}
+.navigation_block {
+  @extend %wrapper;
+  margin: -4.2em auto 3em; position: relative; z-index: 3;
+  .secondary_nav {
+    ul {
+      @include pie-clearfix;
+      li {
+        float: left; display:block; width: 100%; height: 100%; position: relative;
+        //&.active a span { bottom: 0; } 
+        a {
+          @include background-image( linear-gradient(left, $pink, darken($pink,20)));
+          @include unstyled-link;
+          @include transition(all 0.4s ease); 
+          
+          padding-top: 0.5em; line-height:0;
+          display: block; position: relative; z-index: 1;
+          span {
+            @extend %statement;
+            //@include transition(all 0.5s ease);
+            position: absolute; top: 0.3em;
+            text-transform: none;
+            display: inline-block; padding: 0.5em 1em; width: 100%;
+            background: black;
+            background: rgba(black, 0.5);
+            color: white;
+          }
+          img {
+            width: 100%;
+          }
+          &:hover {
+            span {
+              color: $pink;
+              background: black;
+              background: rgba(black, 1.0);
+            }
+          }
+        }
+        &:after {
+          @include transition(all 0.4s ease, opacity 0.4s ease); 
+          @include background(radial-gradient(100% 10px, rgba(0, 0, 0, 0.2) 1px, transparent 100px));
+          @include opacity(0);
+          @include filter(blur(0px));
+          content: ""; width: 100%; position: absolute; bottom: -15px; left: 0; height: 10px;
+        }
+        &:hover {
+          &:after {
+            @include opacity(1);
+            @include filter(blur(2px));
+          }
+          
+          a {
+            @include translate(0, -15px); z-index: 2;
+          }
+        }
+        &.active {
+          @include transition(none); 
+          span {
+            color: $pink;
+            background: black;
+            background: rgba(black, 1.0);
+            bottom: 0; top: auto;
+          }
+          &:after {
+            @include transition(none);
+            @include background($bg_grey);
+            @include opacity(1.0);
+            height: 4.2em; bottom: -4.2em;
+          }
+          &:hover {
+            a {
+              @include translate(0, 0);
+            }
+          }
+          
+        }
+      }
+      &.four_split li{
+        width: 25%;
+      }
+      &.three_split li {
+        width: 33.333%;
+      }
+    }
+  }
+  @include at-breakpoint($main_navigation_break) {
+    padding: 0; margin: 0;
+    .secondary_nav {
+      ul {
+        li {
+          border-left: 1px solid white;
+          border-right: 1px solid white;
+          border-collapse: collapse;
+          &:nth-child(1), &:nth-child(2) { border-bottom: 1px solid white; }
+          &:nth-child(2n+1) { border: none; }
+          &:nth-child(2n+2) { border-right: none; }
+          &.active a { background: $pink; span { background: $pink; color: white; } }
+          a {
+            padding: 0;
+            background: black;
+            overflow: hidden;
+            span { 
+              position: static; padding: 0.5em 2em;
+              background: none; 
+            }
+            img { display:none; }
+            
+            &:hover {
+              @include translate(0, 0);
+              text-indent: 5px; 
+              span {
+                color: white;
+              }
+            }
+          }
+          &:after { display: none; }
+          &:hover {
+            &:after { display: none; }
+          }
+        }
+        &.four_split li { width: 50%; }
+        &.three_split li { width: 50%; }
+      }
+    }
+  }
+  @include at-breakpoint($mobile_break) {
+    .secondary_nav {
+      ul {
+        li {
+          width: 100%; float:none;
+          border: none;
+          border-bottom: 1px solid white; border-collapse: collapse;
+          &:nth-child(2n+1) { border-bottom: 1px solid white; }
+          &:nth-child(2n+2) { border-right: none;  }
+        }
+        &.four_split li { width: 100%; }
+        &.three_split li { width: 100%; }
+      }
+    }
+  }
+}
+.intro {
+  @extend %mod-intro_section;
+}
+//*
+// Navigation
+//*
+nav {
+
+}
+.main_content {
+  @extend %wrapper;
+  @include pie-clearfix;
+  @include at-breakpoint($main_navigation_break) {
+    padding: 0;
+  }
+  
+  .content {
+    background: $bg_grey; overflow: hidden; margin-bottom: 3*$bl;
+    
+    &.person {
+      margin-bottom: 2em;
+      .text_box {
+        margin-left: 200px; position: relative; padding-left: 3em; padding-top: 12em;
+      }
+      
+      .header {
+        float: left; position: relative; margin: 3.5em 0em 0 3em;
+        .title {
+          position: absolute;
+          top: 0; left: 200px; white-space: nowrap;
+          
+          h2 {
+            @extend %header_2;
+            span {
+              color: lighten(black, 50%); font-size: 55%; padding-left: 10px;
+            }
+          }
+          h3 {
+            @extend %header_3; font-size: 1.5em; color: $pink; margin-top: -6px;
+          }
+        }
+        
+        .image {
+          img {
+            border: 1px solid $border_grey;
+          }
+        }
+        
+      }
+      
+    }
+    
+    @include at-breakpoint($main_navigation_break) {
+      &.person {
+        .text_box {
+          margin-left: 170px;
+        }
+        .header {
+          .title {
+            left: 170px;
+          }
+          
+          img {
+            width: 83%;
+          }
+        }
+      }
+    }
+    
+    @include at-breakpoint($mobile_break) {
+      &.person {
+        .text_box {
+          float: none; margin-left: 0; padding: 3.3em;
+        }
+        .header {
+          width: 100%; float: none; position: static; margin: 0; padding: 3.3em; padding-bottom: 0;
+          .image {
+            @include border-radius(42.5px);
+            float: left; width: 85px; height: 85px; overflow: hidden; position: relative; margin-right: 10px; margin-left: -10px;
+            img {
+              width: 90px; left: 50%; margin-left: -47px; position: absolute; border: 0;
+              //top: 10px; left: 50%; margin-left: -85px;
+            }
+          }
+          .title {
+            padding-top: 12px; position: static; margin-top: 0; white-space: normal; font-size: 90%;
+            h2 { line-height: 0.9em; }
+            span { display: block; padding-bottom: 3px; }
+          }
+        }
+      }
+    }
+    
+    &.person-new {
+      @include border-radius(0 0 30px 0);
+      margin-bottom: 2em; position: relative;
+      .text_box {
+        position: relative; z-index: 2;
+        padding: 3.3em; padding-top: 2.3em;
+        max-width: none;
+        width: auto; 
+        padding-right: 280px;
+      }
+      
+      .header {
+        
+        padding: 3.3em; padding-bottom: 0;
+        
+        .title {
+          //position: absolute;
+          //top: 0; left: 200px; white-space: nowrap;
+          
+          h2 {
+            @extend %header_2;
+            span {
+              color: lighten(black, 50%); font-size: 55%; padding-left: 10px;
+            }
+          }
+          h3 {
+            @extend %header_3; font-size: 1.5em; color: $pink; margin-top: -6px;
+          }
+        }
+        
+        .image {
+          position: absolute; right: -40px; bottom: -40px; z-index: 1;
+          img {
+            //border: 1px solid $border_grey;
+          }
+        }
+        
+      }
+      
+    }
+    
+    @include at-breakpoint($main_navigation_break) {
+      &.person-new {
+        .text_box {
+          padding-right: 200px;
+        }
+        .header {
+          .image {
+            right: -15px; bottom: -15px;
+            img {
+              width: 260px;
+            }
+          }
+        }
+      }
+    }
+    
+    @include at-breakpoint($mobile_break) {
+      &.person-new {
+        .text_box {
+          float: none; margin-left: 0; padding-top: 4em; padding-right: 3.3em; position: relative;
+        }
+        .header {
+          width: 100%; position: relative;
+          .image {
+            @include border-radius(42.5px);
+            border: 1px solid $border_grey; margin-bottom: 10px;
+            float: left; width: 85px; height: 85px; overflow: hidden; position: relative; margin-right: 20px; bottom: auto; right: auto;
+            img {
+              width: 90px; left: 50%; margin-left: -47px; position: absolute; border: 0;
+              //top: 10px; left: 50%; margin-left: -85px;
+            }
+          }
+          .title {
+            position: static; margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+  
+}
+.content_footer {
+  background: black(90);
+  @include pie-clearfix;
+  padding: 3*$bl 0;
+  .wrapper { @extend %wrapper; }
+  p, ul {
+    color: black(60); font-size: 1.4em;
+  }
+  @include at-breakpoint($main_navigation_break) {
+    padding-bottom: 2*$bl;
+  }
+}
+//*
+// Footer
+//*
+footer {
+  background: black(15); color: black(60);
+  .footer_content {
+    @extend %wrapper;
+    padding: 2em 1em; position: relative;
+    & > div {
+      font-size: 1.4em;
+    }
+    .copyright {
+      display: inline-block;
+    }
+    span { display: inline-block; margin-left: 12px; width: 1px; border-left: 1px solid black(60); text-indent: 0; overflow: hidden; top: -2px; position: relative; }
+    .links {
+      margin-left: 12px; display: inline-block;
+      a {
+        @include hover-link;
+        @include link-colors(black(60));
+        display: inline-block; margin-right: 1em;
+      }
+    }
+    a.primate {
+      width: 16px; height: 13px; background: url('/images/primate.png'); display: block; text-indent: -9999px; overflow: hidden;
+      margin-right: 12px; position: absolute; right: 12px; top: 22px;
+      @include opacity(0.7);
+      &:hover {
+        @include opacity(0.9);
+      }
+    }
+    @include at-breakpoint($main_navigation_break) {
+      .copyright, .links { float: none; display: block; }
+      span { display: none; }
+      .links { margin-bottom: 0; margin-top: 1em; margin-left: 0; }
+    }
+  }
+}

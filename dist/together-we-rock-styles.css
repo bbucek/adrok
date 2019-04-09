@@ -1,0 +1,281 @@
+#together-we-rock .intro_image > img {
+  height: 100%; }
+
+#together-we-rock .secondary_nav a {
+  overflow: hidden; }
+  #together-we-rock .secondary_nav a > img {
+    width: auto;
+    max-height: 135px; }
+
+#together-we-rock .dropdown {
+  position: relative; }
+  #together-we-rock .dropdown:after {
+    z-index: -1; }
+  #together-we-rock .dropdown.last .dropdown-content {
+    right: 0; }
+
+#together-we-rock .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  width: 445px;
+  font-family: "camingodos-web";
+  font-weight: 400; }
+  @media (max-width: 60em) {
+    #together-we-rock .dropdown-content {
+      display: none !important; } }
+  #together-we-rock .dropdown-content .dropdown-item {
+    width: 100%;
+    padding: 0 20px; }
+    #together-we-rock .dropdown-content .dropdown-item:hover {
+      background: #ea1874; }
+    #together-we-rock .dropdown-content .dropdown-item .arrow {
+      float: right;
+      font-size: 20px; }
+    #together-we-rock .dropdown-content .dropdown-item a {
+      display: block;
+      background-image: none !important;
+      line-height: 42px;
+      padding-top: 0;
+      font-size: 18px; }
+      #together-we-rock .dropdown-content .dropdown-item a:after {
+        display: none; }
+
+#together-we-rock .sub-dropdown {
+  position: relative; }
+  #together-we-rock .sub-dropdown:after {
+    display: none; }
+
+#together-we-rock .sub-dropdown-content {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #2a2929;
+  min-width: 160px;
+  width: 445px; }
+  #together-we-rock .sub-dropdown-content--right {
+    right: 100%;
+    left: auto; }
+  #together-we-rock .sub-dropdown-content .sub-dropdown-item {
+    width: 100%;
+    padding: 10px 20px; }
+    #together-we-rock .sub-dropdown-content .sub-dropdown-item:hover {
+      background: #ea1874; }
+    #together-we-rock .sub-dropdown-content .sub-dropdown-item a {
+      background-image: none !important;
+      font-size: 18px;
+      line-height: 28px;
+      padding: 0; }
+      #together-we-rock .sub-dropdown-content .sub-dropdown-item a:after {
+        display: none; }
+
+#together-we-rock .dropdown:hover .dropdown-content {
+  display: block; }
+
+#together-we-rock .sub-dropdown:hover .sub-dropdown-content {
+  display: block !important; }
+
+#together-we-rock .table-of-contents {
+  padding: 3.5em 3em; }
+  #together-we-rock .table-of-contents__description {
+    padding-bottom: 50px; }
+    #together-we-rock .table-of-contents__description h2 {
+      font-size: 32px;
+      line-height: 1.25; }
+    #together-we-rock .table-of-contents__description p {
+      margin-top: 20px;
+      width: 640px; }
+  #together-we-rock .table-of-contents .single-chapter {
+    padding: 10px 0; }
+    #together-we-rock .table-of-contents .single-chapter > a {
+      text-decoration: none;
+      color: inherit; }
+    #together-we-rock .table-of-contents .single-chapter__title {
+      font-size: 25px;
+      line-height: 1.2;
+      font-family: "camingodos-web";
+      font-weight: 700; }
+    #together-we-rock .table-of-contents .single-chapter__links > li a {
+      display: block;
+      font-size: 17px;
+      color: #ec3a85;
+      line-height: 1.6;
+      padding-left: 35px;
+      position: relative; }
+      #together-we-rock .table-of-contents .single-chapter__links > li a:before {
+        display: inline-block;
+        position: absolute;
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: #ec3a85;
+        left: 16px;
+        top: 9px; }
+
+#together-we-rock .single-article {
+  padding: 3.5em 240px 3.5em 3em; }
+  @media (max-width: 50em) {
+    #together-we-rock .single-article {
+      padding: 20px; } }
+  #together-we-rock .single-article .adrok-button {
+    display: inline-block;
+    margin-top: 40px;
+    transition: all .2s ease-in-out;
+    text-decoration: none; }
+    #together-we-rock .single-article .adrok-button__full-background {
+      padding: 20px 35px;
+      font-size: 17px;
+      line-height: 27px; }
+      #together-we-rock .single-article .adrok-button__full-background--pink {
+        background: #ec3a85;
+        color: #fff;
+        font-family: "camingodos-web";
+        font-weight: 700; }
+        #together-we-rock .single-article .adrok-button__full-background--pink:hover, #together-we-rock .single-article .adrok-button__full-background--pink:focus {
+          background: #de156a;
+          color: #fff; }
+  #together-we-rock .single-article .breadcrumbs-arrow {
+    display: inline-block;
+    font-size: 25px;
+    padding: 0 5px;
+    color: #808080; }
+  #together-we-rock .single-article .breadcrumbs li,
+  #together-we-rock .single-article .breadcrumbs a {
+    display: inline-block;
+    color: #ec3a85;
+    font-size: 17px;
+    line-height: 1.3; }
+  #together-we-rock .single-article .breadcrumbs li:last-child {
+    font-weight: bold; }
+  #together-we-rock .single-article__content {
+    color: #4d4d4d; }
+    #together-we-rock .single-article__content h2,
+    #together-we-rock .single-article__content h3,
+    #together-we-rock .single-article__content h4 {
+      font-family: "camingodos-web";
+      font-weight: 700;
+      line-height: 1.3;
+      margin-top: 40px;
+      color: #0b0000; }
+    #together-we-rock .single-article__content h2 {
+      font-size: 32px; }
+      @media (max-width: 50em) {
+        #together-we-rock .single-article__content h2 {
+          font-size: 24px; } }
+    #together-we-rock .single-article__content h3 {
+      font-size: 25px; }
+      @media (max-width: 50em) {
+        #together-we-rock .single-article__content h3 {
+          font-size: 20px; } }
+    #together-we-rock .single-article__content h4 {
+      font-size: 20px;
+      text-transform: none;
+      padding: 0; }
+      @media (max-width: 50em) {
+        #together-we-rock .single-article__content h4 {
+          font-size: 18px; } }
+    #together-we-rock .single-article__content p {
+      margin-top: 20px;
+      font-size: 17px;
+      line-height: 1.3; }
+      @media (max-width: 50em) {
+        #together-we-rock .single-article__content p {
+          font-size: 15px; } }
+    #together-we-rock .single-article__content img {
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      margin: 40px auto 0;
+      display: block; }
+    #together-we-rock .single-article__content i {
+      font-style: italic; }
+    #together-we-rock .single-article__content .image-description {
+      color: #808080;
+      font-size: 17px;
+      line-height: 1.3;
+      display: block;
+      margin-top: 20px;
+      font-weight: bold; }
+      #together-we-rock .single-article__content .image-description a {
+        color: #808080; }
+    #together-we-rock .single-article__content ul {
+      list-style-type: disc; }
+    #together-we-rock .single-article__content ol {
+      list-style-type: decimal; }
+    #together-we-rock .single-article__content ul,
+    #together-we-rock .single-article__content ol {
+      list-style-position: outside;
+      margin-left: 25px;
+      font-size: 17px;
+      line-height: 1.3; }
+      #together-we-rock .single-article__content ul ul,
+      #together-we-rock .single-article__content ul ol,
+      #together-we-rock .single-article__content ol ul,
+      #together-we-rock .single-article__content ol ol {
+        list-style-position: outside;
+        margin: 0 0 15px 20px; }
+      #together-we-rock .single-article__content ul ul,
+      #together-we-rock .single-article__content ol ul {
+        list-style-type: circle; }
+      #together-we-rock .single-article__content ul ol,
+      #together-we-rock .single-article__content ol ol {
+        list-style-type: lower-latin; }
+      #together-we-rock .single-article__content ul li,
+      #together-we-rock .single-article__content ol li {
+        margin-top: 10px; }
+    #together-we-rock .single-article__content object {
+      width: 100%;
+      height: 100vh;
+      margin-top: 40px; }
+    #together-we-rock .single-article__content .table {
+      border: 1px solid #000;
+      padding: 25px;
+      margin-top: 40px; }
+      #together-we-rock .single-article__content .table > h3:first-of-type {
+        margin-top: 0; }
+    #together-we-rock .single-article__content .image-right {
+      float: right;
+      margin-bottom: 40px; }
+    #together-we-rock .single-article__content .pink-highlight {
+      color: #ec3a85; }
+    #together-we-rock .single-article__content a {
+      color: #ea1874; }
+  #together-we-rock .single-article .footnotes {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 2px solid #ccc; }
+    #together-we-rock .single-article .footnotes i {
+      font-style: italic; }
+    #together-we-rock .single-article .footnotes p {
+      margin-top: 10px; }
+    #together-we-rock .single-article .footnotes h3 {
+      font-size: 25px;
+      line-height: 1.2;
+      margin-top: 20px; }
+    #together-we-rock .single-article .footnotes ol {
+      margin-left: 20px;
+      list-style-type: decimal; }
+      #together-we-rock .single-article .footnotes ol li {
+        margin-top: 10px;
+        color: #4d4d4d;
+        font-size: 17px;
+        line-height: 1.3; }
+        #together-we-rock .single-article .footnotes ol li:first-child {
+          margin-top: 0; }
+        #together-we-rock .single-article .footnotes ol li a {
+          color: #ea1874; }
+
+#together-we-rock .first-page__title {
+  margin-top: 40px;
+  font-size: 48px;
+  color: #ec3a85;
+  font-family: "camingodos-web";
+  font-weight: 700; }
+
+#together-we-rock .first-page__image {
+  width: 100%;
+  margin: 40px 0; }

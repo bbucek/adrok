@@ -1,0 +1,21 @@
+body#page {
+  .intro {
+    .intro_image {
+      img {
+        @include at-breakpoint($mobile_break) {
+          height: auto; position: static; margin-left: 0; width: auto;
+        }
+      }
+    }
+    
+  }
+  
+  .videos {
+    h3 {
+      margin-top: $bl*2;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

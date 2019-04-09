@@ -1,0 +1,12 @@
+//*
+// REM conversions
+//*
+@mixin font-size-px-to-rem($size_in_px) {
+  font-size: #{$size_in_px}px;
+  font-size: ($size_in_px / 16) * 1rem;
+}
+
+@mixin line-height-px-to-rem($size_in_px) {
+  line-height: #{$size_in_px}px;
+  line-height: ($size_in_px / 16) * 1rem;
+}

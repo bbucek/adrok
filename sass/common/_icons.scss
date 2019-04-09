@@ -1,0 +1,86 @@
+//*
+// ICON FONT IMPORT AND DEFINITION
+//*
+@font-face {
+  font-family: 'icons';
+  src: font-url('icomoon.eot');
+  src: font-url('icomoon.eot?#iefix') format('embedded-opentype'),
+    font-url('icomoon.woff') format('woff'),
+    font-url('icomoon.ttf') format('truetype'),
+    font-url('icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$icon_font: 'icons';
+
+//*
+// SPRITE IMAGE CONFIGURATION
+//*
+// $sprite_image: "/images/link-to-sprite.png";
+// $sprite_grid_height: 22px;
+// $sprite_grid_width: 22px;
+
+//*
+// ICON GENERATION MIXINS
+//  For both icon fonts, and image sprites.
+//*
+
+// GENERATE EXTEND ICON - FOR FONT ICONS (using icomoon)
+@mixin generate_extend_icon($content) {
+  content: $content;
+  font-family: $icon_font; font-style: normal; font-weight: normal; text-transform: none; -webkit-font-smoothing: antialiased; speak: none;
+}
+
+// GENERATE EXTEND ICON - FOR IMAGE SPRITE
+// @mixin generate_extend_icon($grid-width: 1, $grid-height: 1, $sprite-x: 0, $sprite-y: 0){
+//   display: inline-block; float: left;
+//   content: ""; width: $grid-width * $sprite_grid_width; height: $grid-height * $sprite_grid_height;
+//   background: url($main_sprite) left top no-repeat;
+//   background-position: (-($sprite-x * $sprite_grid_width)) (-($sprite-y * $sprite_grid_width));
+// }
+
+// GENERATE CLASS SELECTOR ICON - FOR FONT ICONS (using icomoon)
+@mixin generate_icon($name, $content, $font-size, $line-height, $margin: 0 0 0 0, $color: black) {
+  .icon_#{$name}:before {
+    content: $content; margin: $margin;
+    font-size: $font-size; line-height: $line-height; color: $color;
+  }
+}
+
+// GENERATE CLASS SELECTOR ICON - FOR IMAGE SPRITE
+// @mixin generate_icon($name, $grid-width: 1, $grid-height: 1, $sprite-x: 0, $sprite-y: 0){
+//   .icon_#{$name}:before {
+//     width: $grid-width * $sprite_grid_width; height: $grid-height * $sprite_grid_height;
+//     background-position: (-($sprite-x * $sprite_grid_width)) (-($sprite-y * $sprite_grid_width));
+//   }
+//   .icon_#{$name}.centered { position: relative; margin-left: (($grid-width * $sprite_grid_width) + 3px); &:before { position: absolute; top: 0; left: (-(($grid-width * $sprite_grid_width) + 3px)); } }
+// }
+
+//*
+// EXTEND ICON DEFINITIONS
+//*
+%linkedin_icon { @include generate_extend_icon("\e000"); }
+%youtube_icon { @include generate_extend_icon("\e002"); }
+%facebook_icon { @include generate_extend_icon("\e003"); }
+%twitter_icon { @include generate_extend_icon("\e004"); }
+%navigation_icon { @include generate_extend_icon("\e005"); }
+
+//*
+// CLASS SELECTOR ICON DEFINITION
+//  Use in markup.  The class name will be 'icon_', then the name you define
+//*
+
+//  For font icons (using icomoon)
+.icon {
+  font-family: 'icomoon'; font-style: normal; font-weight: normal; text-transform: none; -webkit-font-smoothing: antialiased; speak: none;
+}
+
+// For image sprite icons
+// .icon {
+//   content: ""; display: inline-block; float: left;
+//   background: url($main_sprite) left top no-repeat;
+// }
+
+// @include generate_icon('example_image_icon', 1,1,4,0); // Use class="icon_example_image_icon"
+// @include generate_icon('example_font_icon', "\e000", 14px, 18px, '0 10px 0 0', #444); // Use class="icon_example_font_icon"

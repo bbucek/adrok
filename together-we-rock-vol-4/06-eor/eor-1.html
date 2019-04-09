@@ -1,0 +1,213 @@
+@@include('header.html', {
+  "level": "third"
+})
+
+@@include('section-tabs.html', {
+  "level": "third"
+})
+
+<div class='section main_content'>
+  <div class="content">
+    <section class="single-article">
+      <ul class="breadcrumbs">
+        <li><a href="../../together-we-rock-vol-4.html">Contents</a><span class="breadcrumbs-arrow">&rsaquo;</span></li>
+        <li><a href="eor.html">06 EOR heating oils (laboratory ADR)</a><span class="breadcrumbs-arrow">&rsaquo;</span></li>
+        <li>6.1 Experiment Report</li>
+      </ul><!-- /.single-article__breadcrumb -->
+
+      <div class="single-article__content">
+
+        <h3>Experiment Report:</h3>
+        <h2>Spectroscopic properties of sand samples in a variety of mediums at high temperature</h2>
+
+        <h4>DISCLAIMER</h4>
+        <p>The results, interpretations and conclusions in this report have been derived from Adrok’s electronic system measurements and, whilst reasonable diligence has been applied to ensure data quality, Adrok cannot guarantee the accuracy or correctness of any results, interpretations and conclusions derived from those measurements. As a consequence, Adrok (nor any of its directors, officers, employees, advisers and consultants, whether past or present) shall be held liable for any loss, costs, damages or expenses of whatever kind (including any consequential loss, costs, damages or expenses) incurred or sustained by any person with respect to such results, interpretations and conclusions or reliance thereon.</p>
+
+        <h4>ABBREVIATIONS</h4>
+        <p>Adrok =   Adrok Ltd<br>
+           Tx     =   Transmitter<br>
+           Rx     =   Receiver<br>
+           TCC01  =   Adrok typecasting chamber 01.</p>
+
+        <h4>GLOSSARY OF ADROK’S TERMS</h4>
+
+        <img src="../../images/together-we-rock-vol-4/06-eor/eor-00.png" />
+
+        <h3>1.0 ABSTRACT SUMMARY</h3>
+
+        <p>This is a laboratory based study of samples of sand in water and sand in Oil analysed using Adrok’s Atomic Dielectric Resonance (ADR) technology at 200°F (93.3°C) temperature. This study compliments a previous study conducted by Adrok in January 2013 of the same samples at room temperature. (‘<i>Report 00142_v1 Adrok- Chevron.pdf</i>’)</p>
+        <p>Characterisation of the different sand samples in these different mediums is of vital importance to Chevron to aid the distinction of the different sand zones in a well. Adrok applies their laboratory ADR Spectroscopic techniques to assess the differences in said samples.</p>
+
+        <h3>2.0 INTRODUCTION</h3>
+
+        <p>Adrok develops and uses advanced technology to supply geophysical services for locating, identifying and mapping sub-surface natural resources (oil, gas, water and minerals).</p>
+        <p>Chevron (<a href="https://www.chevron.com/" target="_blank">www.chevron.com</a>) is one of the world's leading integrated energy companies and conducts business worldwide.</p>
+        <p>Chevron provided Adrok with the following samples and information:</p>
+
+        <ol>
+            <li>Eight (8) samples of sand. In particular, two sand samples in air, two sand samples in oil and two additional samples for sand at slightly different depths. In order to perform the analysis, samples are labelled in the same format as the previous report (‘<i>Report 00142_v1 Adrok-Chevron.pdf</i>’) however, in this instance the term ‘hot’ has been appended to the name to allow comparison with the previous data acquired at room temperature :
+                <ol>
+                    <li>SAIR, for 1 sand core in air</li>
+                    <li>SWATER1 for the 1 sand core in water with 1 horizontal grey line</li>
+                    <li>SWATER2 for sand in water with 2 horizontal grey lines</li>
+                    <li>SOIL1 for sand in oil with 3 horizontal grey lines and</li>
+                    <li>SOIL2 for sand in oil with 4 horizontal grey lines.</li>
+                </ol>
+            </li>
+        </ol>
+
+        <p>The additional samples are labelled as KR89510 and KR89530, respectively. The grey lines refer to tape applied by Chevron, to the external container for each sample. There is no specific instruction as to what these represent but it is assumed these represent the sample number.</p>
+        <p>In order to clarify the origin of the samples a well log is reported in <b>figure 1</b>.</p>
+        <p>The differences between the sand samples at high temperature (200°F or 93.3°C), are observed using Adrok’s <i>ADR</i> spectrometer. The variations that occur in the energy signals (primarily E-Range, E-Mean, E-ADR) are related to the physical and chemical properties of each sample. These parameters are used in order to characterise and distinguish the different sand samples.</p>
+
+        <img src="../../images/together-we-rock-vol-4/06-eor/eor-0.png" />
+        <span class="image-description">Figure 1: A sub-section of well log.</span>
+
+        <h3>2.1 OBJECTIVES</h3>
+
+        <ol>
+            <li><i>ADR</i> analysis of sand samples in order to calculate:
+                <ol>
+                    <li><i>ADR</i> ratio (E-<i>ADR</i>)</li>
+                    <li>Energy mean (E-mean)</li>
+                    <li>Energy range (E-Range)</li>
+                </ol>
+            </li>
+            <li>Analyse dataset in order to characterise the sand samples in water and oil, respectively.</li>
+            <li>Distinguish samples based on temperature.</li>
+        </ol>
+
+        <h3>3.0 HYPOTHESES</h3>
+
+        <p>Using <i>ADR</i> technology, it is possible to highlight the different spectroscopic features between different sand samples in air, water and oil at room temperature and at 93.3°C respectively.</p>
+
+        <h3>4.0 METHODOLOGY</h3>
+
+        <p>Each sample was heated up to 200°F (93.33°C) and was scanned in order to obtain the spectral features at high temperature. The <i>ADR</i> analysis of sand samples is performed by acquiring a set of 3 <i>ADR</i> scans for each rock sample. In addition to these scans, an empty chamber is acquired in order to subtract the empty chamber spectra from the rock spectra (i.e. to remove the background). In particular, the processes that are used in order to create these file can be summarised as follows:</p>
+
+        <ol>
+            <li>The ‘compare sample function’ in Radamatic (Adrok’s proprietary software suite) is used to select the best 2 (out of 3) scans for each sample.</li>
+            <li>These two scans are added using Principal Component Addition (<i>PCA</i>).</li>
+            <li>An X3Y3 smoothing filter is applied to the <i>PCA</i> (and empty chamber) image. </li>
+            <li>The image of the empty chamber is then subtracted from the <i>PCA</i> image.</li>
+        </ol>
+
+        <p>Before the measurements were taken, it was necessary to check the stabilisation of the A01-TCU01 unit. In order to do this, the source of the trace was referenced in the scope screen, by putting the 7th wave in the centre of the scope screen. After referenced, one scan every 20 minutes was acquired. Two parameters were checked, the central position of the 7th wave in the scope and the vertical “jitter” of the source trace.</p>
+        <p>An alternative way to verify the unit consistency is to record the reference wave in the scope, show the reference wave in the scope and check how the source wave moves, respect to the reference wave. Following stabilisation of the radio frequency source, a set of 3 spectra of the empty chamber were recorded. After these scans, the data for the 7 rock samples was acquired.</p>
+
+        <h4>Data Analysis</h4>
+
+        <p>Among the numerous data analysis options that Adrok can employ, one such option is the creation of a false colour image from three separate analytical results. Details on how this is achieved are given in <b>figure 2</b>. The normalisation of analytical data to range from 0 to 1 provides a value that can be used as one of the components of an <i>RGB</i> image (in Matlab). <b>Figure 3</b> demonstrates the type of image that can be expected. This example looks at sub-surface areas, creating unique colours for layers of fixed thickness, however, the same principles apply when comparing samples within the lab.</p>
+
+        <img src="../../images/together-we-rock-vol-4/06-eor/eor-1.png" />
+        <span class="image-description">Figure 2: Description of how Matlab creates a unique colour and how Adroks analytical components can be normalised to create one of the 3 <i>RGB</i> components that can create such a unique colour.</span>
+
+        <p>In this example, the peach areas enclosed within the solid lines correspond with high responses of the <i>WMF</i> and the <i>E-log</i>. It can be seen that the slight changes in the shade of peach appears to be determined by the small changes in the <i>E-ADR</i>.</p>
+
+        <img src="../../images/together-we-rock-vol-4/06-eor/eor-2.png" />
+        <span class="image-description">Figure 3: Demonstration of the type of image that can be created using Adrok’s analytical parameters and how this presentation can aid the identification of similarities and differences between separately analysed samples.</span>
+
+        <h3>5.0 APPARATUS</h3>
+
+        <p>The chamber setup configuration is presented in <b>figure 4</b>.</p>
+
+        <img src="../../images/together-we-rock-vol-4/06-eor/eor-3.png" />
+        <span class="image-description">Figure 4: <b><i>ADR</i></b> chamber. The source A01-TCC01 is connected to the e-B TCC01 unit with the transmitter output plug and the signal coming out from the e-B TCC01 unit is connected to the second input channel of the A01-RCU01.</span>
+
+        <p><b>Figure 5</b> shows a rock sample in the chamber and <b>figure 6</b> presents the receiver trace and the waveform snapshot parameters at the moment of acquisition.</p>
+
+        <img src="../../images/together-we-rock-vol-4/06-eor/eor-4.png" />
+        <span class="image-description">Figure 5. Example of sample position measurement</span>
+
+        <img src="../../images/together-we-rock-vol-4/06-eor/eor-5.png" />
+        <span class="image-description">Figure 6. Stabilised receiver trace</span>
+
+        <h3>7.0 RESULTS</h3>
+
+        <p><b>Table 1</b> contains a summary of each sample; name, weight, volume and density acquired at room temperature.</p>
+
+        <img src="../../images/together-we-rock-vol-4/06-eor/eor-6.png" />
+        <span class="image-description">Table 1. Summary statistics for each analysed sample.</span>
+
+        <p>The <i>ADR</i> scans enable the Energy Range (E-Range), Energy Mean (E-Mean) and Energy  <i>ADR</i> (E-<i>ADR</i>) to be calculated. These parameters acquired at 93.3°C have been combined to create a false image, as described above and which can be observed in <b>figure 7</b>. Values for <i>ERange</i>, <i>EMean</i> and <i>EADR</i> were normalised (0 to 1) across all samples. These values were then used to create a Red (<i>Erange</i>) / Green (<i>EMean</i>) / Blue (<i>EADR</i>), <i>RGB</i> stripe. This <i>RGB</i> image displays the way in which the three parameters vary relative to one and other (i.e. sample to sample).</p>
+
+        <img src="../../images/together-we-rock-vol-4/06-eor/eor-7.png" />
+        <span class="image-description">Figure 7. Sand samples at 93.3°C <i>RGB</i> false image. Sample 1 is SAIR, sample 2 is SWATER1, sample 3 is SWATER2, samples 4 and 5 represent SOIL1 and SOIL2 and finally KR89510 and KR89530 represent samples 6 and 7 respectively.</span>
+
+        <p>In order to have a better comparison between the sand samples in oil and samples in water, <b>figure 8</b> diplays the <i>RGB</i> values for these samples.</p>
+
+        <img src="../../images/together-we-rock-vol-4/06-eor/eor-8.png" />
+        <span class="image-description">Figure 8. Sand samples at 93.3°C on <i>RGB</i> false image. Sample 1 is SAIR, sample 2 is SWATER1, sample 3 is SWATER2, samples 4 and 5 represents SOIL1 and SOIL2 respectively.</span>
+
+        <p>In <b>figure 9</b> the <i>RGB</i> co-ordinate space value at room temperature, measured previously, is reported.</p>
+
+        <img src="../../images/together-we-rock-vol-4/06-eor/eor-9.png" />
+        <span class="image-description">Figure 9. Sand samples at room temperature on <i>RGB</i> false image. Sample 1 is SAIR, sample 2 is SWATER1, sample 3 is SWATER2, sample 4 and 5 represents SOIL1 and SOIL2.</span>
+
+        <p>The <i>ADR</i> harmonic energy variation represents an additional feature related to the physical and chemical composition of the rocks. <b>Figure 10</b> shows the <i>ADR</i> harmonic energy variation at 93.3°C for the sand samples in water and in oil respectively.</p>
+
+        <img src="../../images/together-we-rock-vol-4/06-eor/eor-10.png" />
+        <span class="image-description">Figure 10. E-<i>ADR</i> harmonic energy variation at 93.3°C for SWATER1 and SWATER2 and SOIL1 and SOIL2.</span>
+
+        <p>In <b>figure 11</b> the E-<i>ADR</i> harmonic variation energy at 93.3°C between 6<sup>th</sup> and 25<sup>th</sup> harmonic is reported.</p>
+
+        <img src="../../images/together-we-rock-vol-4/06-eor/eor-11.png" />
+        <span class="image-description">Figure 11. E-<i>ADR</i> harmonic energy variation for SWATER1 and SWATER2 and SOIL1 and SOIL2.</span>
+
+        <p><b>Figure 12</b> shows the E-<i>ADR</i> Harmonic energy variation at 93.3°C for the sand samples in air and water, iuncluding SAIR samples.</p>
+
+        <img src="../../images/together-we-rock-vol-4/06-eor/eor-12.png" />
+        <span class="image-description">Figure 12 E-<i>ADR</i> harmonic energy variation for SAIR, SWATER1 and SWATER2 and SOIL1 and SOIL2.</span>
+
+        <p><b>Figure 13</b> shows the E-<i>ADR</i> Harmonic energy variation at 93.3°C for the sand samples in water including KR89510 and KR89530 samples.</p>
+
+        <img src="../../images/together-we-rock-vol-4/06-eor/eor-13.png" />
+        <span class="image-description">Figure 13 E-<i>ADR</i> harmonic energy variation for SWATER1, SWATER2 and KR89510 and KR89530.</span>
+
+        <p>In addition to this a comparison between the same samples at different temperatures is reported. In particular, figure 14 shows the comparison between water sample no.1 (SWATER1) at room temperature and at 93.3°C respectively.</p>
+
+        <img src="../../images/together-we-rock-vol-4/06-eor/eor-14.png" />
+        <span class="image-description">Figure 14 E-<i>ADR</i> harmonic energy variation for the water sample no. 1 (SWATER1 and SWATER1 HOT) at room temperature and at 93.3°C respectively.</span>
+
+        <p>In <b>figure 15</b> the comparison between water sample no.2 (SWATER2) at room temperature and at 93.3°C respectively, is presented.</p>
+
+        <img src="../../images/together-we-rock-vol-4/06-eor/eor-15.png" />
+        <span class="image-description">Figure 15 E-<i>ADR</i> harmonic energy variation for water samples no. 2 (SWATER2 and SWATER2 HOT) at room temperature and at 93.3°C respectively.</span>
+
+        <p>The same comparsion is displayed for the oil samples in <b>figures 16</b> and <b>17</b>.</p>
+
+        <img src="../../images/together-we-rock-vol-4/06-eor/eor-16.png" />
+        <span class="image-description">Figure 16 E-<i>ADR</i> harmonic energy variation for the first set oil sample no.1 (SOIL1 and SOIL1 HOT) at room temperature and at 93.3°C respectively.</span>
+
+        <p><b>Figure 17</b> shows the shows the different <i>E-ADR energy value</i> between oil sample n.2 (SOIL2) at room temperature and 93.3 C degree respectively.</p>
+
+        <img src="../../images/together-we-rock-vol-4/06-eor/eor-17.png" />
+        <span class="image-description">Figure 17 E-<i>ADR</i> harmonic energy variation for the second set of oil samples n.2 (SOIL2 and SOIL2 HOT) at different temperature</span>
+
+        <h3>8.0 DISCUSSION</h3>
+
+        <p>The <i>ADR</i> scans enabled the <i>E-Range</i>, <i>E-Mean</i> and <i>E-ADR</i> to be calculated for the sand samples. This data was used to create a false <i>RGB</i> image which was presented in <b>figure 7</b>. The <i>RGB</i> graph is a visual tool that allows the changes in <i>E-Range</i>, <i>E-mean</i> and <i>E-ADR</i> to be highlighted. <i>RGB</i> graphs represent a 3 coordinate space, whereby, the combination of the coordinates gives a defined colour. In order to obtain this, it was necessary to take an average value for <i>E-Range</i>, <i>E-Mean</i> and <i>E-ADR</i> for every sample, then find the maximum value for <i>E-Range</i>, <i>E-Mean</i> and <i>E-ADR</i> respectively, across all samples. Finally, by dividing every averaged value by the maximum value, a normalised value is obtained (these value range from 0 to 1). Once the <i>E-Range</i>, <i>E-Mean</i> and <i>E-ADR</i> are normalised, this gives three sets of numbers that vary from 0 to 1 forming the <i>RGB</i> space.</p>
+        <p><b>Figure 7</b> and <b>8</b> demonstrated the change of <i>E-Range</i> (R-component), <i>E-Mean</i> (G- component) and <i>E-ADR</i> (B-component) respectively, for the different sand samples at 93.3°C. The strips corresponding to the different samples show different colours, which is due to the different physical and chemical composition of the samples. In particular, it is possible to distinguish a sand sample in oil (SOIL1 AND SOIL2) from sand samples in water and air respectively. Sand in oil samples present an increase of the <i>E-ADR</i> values with respect to sand in water (SWATER1 AND SWATER2). The <i>E-ADR</i> growth effect is due to the process of heating the samples, this allows us to distinguish, the same samples at different temperatures. In fact, by comparing figure 8 and figure 9 it is possible to see a colour differences due to the increase of <i>E-ADR</i> component given by the heating process. Figure 7 shows that samples 6 and 7 (KR89510 and KR89530) present similar colours to S2 and S5 (SWATER1 AND SOIL2). KR89510 and KR89530 <i>RGB</i> results are slightly different from that acquired at room temperature, in particular, the KR89530 presents similar colours to the sample in oil no.2 (SOIL2). Conversely, previous results, acquired at room temperature, show that KR89530 had similar colours to SWATER2, this difference could be due to the heating process eliminating the water present in the KR89530 sample.</p>
+        <p>A better characterisation for sand samples in oil and water can be obtained from the <i>ADR</i> harmonic energy variation images. <b>Figures 10-12</b> show the change of the <i>ADR</i> harmonic energy for sand samples in air, water and oil. In particular, <b>figure 10</b> shows the Harmonic energy variation of sand in oil and sand in water. <b>Figure 11</b> shows the same harmonic energy variation between the 8<sup>th</sup> and 23<sup>th</sup> harmonic. It is possible to observe that sand in oil and sand in water presents different values between this harmonic range, (this area is highlighted by using a black rectangle). In particular, SWATER1 and SWATER2 have smaller harmonic values than SOIL1 and SOIL2. This is clearly shown in figure 11, with red colour features present in the SOIL1 and SOIL2 samples. Conversely, SWATER1 and SWATER2 show a small harmonic value, depicted as an orange colour. In addition to this, between harmonic 19 and 23 a slightly different colour between water samples and oil samples can be observed, water samples present a red component, whereas oil samples present a more pronounced blue component.</p>
+        <p>In <b>Figure 13</b>, the <i>ADR</i> harmonic variation for the sand samples in air (SAIR) is added to the previous samples, displayed in <b>figure 11</b>. In this case, the <i>ADR</i> energy variation for SAIR (bottom part of the graph) presents a different values between the 9<sup>th</sup> and 19<sup>th</sup> harmonic. In particular, SAIR presents smaller values between the 9<sup>th</sup> and 19<sup>th</sup> harmonic, with respect to the water and oil samples. This is clearly shown by a blue component in the bottom part of <b>figure 13</b>. This pattern is characteristic for SAIR and enables its distinction from other sand samples. <b>Figure 13</b> shows the E-ADR harmonic energy pattern for sand samples in water as well as KR89510 and KR89530 samples. Two KR samples displays a distinct pattern between the 9<sup>th</sup> and the 23<sup>th</sup> harmonic. In particular, KR89510 presents a blue colour in the specified harmonics range. KR89530 presents a red colour instead. This harmonic energy pattern characterises the KR89510 and KR89530 samples from the water and oil sand samples.</p>
+        <p><b>Figures 14-17</b> show the behaviour of the same sample at different temperatures. In <b>figure 14</b>, E-ADR harmonic values for water sample no.1 at room temperature and at 93.3°C respectively, is shown. In this case, it is possible to observe changes in colour that correspond to changes in the E-ADR harmonic values, between the 4<sup>th</sup> and 8<sup>th</sup> and between the 12<sup>th</sup> and 31<sup>th</sup> harmonics. This effect is due to the temperature differences. Figure 15 shows the same values for water sample no.2. Water sample no.2 at 93.3°C (SWATER HOT 2) present higher E-ADR harmonic values than the same sample at room temperature, this is due to the sample heating that increase the E-ADR values between the 9<sup>th</sup> and 23<sup>th</sup> harmonics.</p>
+        <p><b>Figures 16</b> and <b>17</b> show the temperature effects for oil samples, SOIL1 and SOIL2 respectively. In figure 16, the oil sample at 93.3°C (SOIL HOT 1) shows high E-ADR harmonics between 9<SUP>th</SUP> and 13<SUP>th</SUP> harmonic (red colour) and a small E-ADR (blue colour) values between the 12<sup>th</sup> and 16<sup>th</sup> harmonic, with reference to the same sample at room temperature. Also, in this case, the effect of sample heating is clearly shown. <b>Figure 17</b> shows the same effects for the sand sample in oil no.2. In particular, the oil sample at 93.3°C (SOIL HOT 2) presents a quite distinct E-ADR harmonic value between the 8<sup>th</sup> and 14<sup>th</sup> harmonic and between the 16<sup>th</sup> and 20<sup>th</sup> harmonic.</p>
+        <p>The <i>ADR</i> harmonic Energy variation is an additional parameter that highlights the difference between sand samples, as well as identifying a specific harmonic energy pattern for the different samples. In addition to this, <i>ADR</i> harmonic Energy allows the changes in spectroscopic features, due to the heating process of the samples, to be distinguished.</p>
+
+        <h3>9.0 CONCLUSIONS</h3>
+
+        <p>Sand samples in air, in water and in oil at 200°F (93.3°C) were investigated by using Adrok technology. Energy-<i>Range</i>, Energy-Mean and Energy-Gamma are parameters related to the physical and chemical properties of the rock samples. By using these parameters, (<i>RGB</i> images presented in <b>figures 7</b> and <b>8</b>) the differences between the samples can be highlighted. Harmonic energy <i>ADR</i> images reported in <b>figures 10</b> to <b>13</b> have given a specific pattern for the rock samples. In addition to this, by using harmonic energy <i>ADR</i> values, the heating effects of the sample can be seen, in particular, the increase in the E-ADR values with temperature. The results of the harmonic analysis have provided positive results for the distinction of different types of material laden sand, both at room temperature and when heated to 93.3°C.</p>
+
+        <h3>10.0 FUTURE RESEARCH RECOMMENDATIONS</h3>
+
+        <p>The laboratory results have demonstrated that it is possible to observe the differences between sands containing different types of material and distinguish the sand samples in oil, water and in air, at room temperature and at 93.3°C. A future recommendation would be to acquire field data which could be compared to the laboratory data presented here.</p>
+
+        <img src="../../images/together-we-rock-vol-4/06-eor/eor-18.png" />
+
+      </div><!-- /.single-article__content -->
+
+    </section><!-- /.single-article -->
+  </div>
+</div>
+
+@@include('footer.html')

@@ -1,0 +1,34 @@
+//*
+// Sizing
+//*
+$bl: 11px; // Baseline
+$blp: 11; // Baseline value without type - used in function calculations
+
+//*
+// Colours
+//*
+$black: #000;
+$white: #fff;
+$pink: #ec3a85;
+$dark_pink: darken($pink, 20%);
+$border_grey: darken(#e6e6e6, 5%);
+$bg_grey: black(95);
+$light_grey: black(80);
+$medium_grey: black(60);
+//*
+// Fonts
+//  Please define any font families here, including @font-face if required
+//*
+$header_font: 'camingodos-web';
+$body_font: Arial, sans-serif;
+
+//*
+// Drop shaddows & letterpress
+//*
+
+
+//*
+// Gradients
+//  Please remember to declare a solid background color before your gradient
+//*
+@mixin gradient_blue { background: $blue; @include background-image(linear-gradient($blue,$alt_blue)); }

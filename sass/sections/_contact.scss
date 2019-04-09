@@ -1,0 +1,54 @@
+.contact {
+  overflow: hidden;
+  .content {
+    @include span-columns(8, 12);
+    
+    form {
+      @extend %form;
+      input[type="text"], textarea {
+        width: 300px;
+      }
+      
+      textarea {
+        height: 140px;
+      }
+    }
+    
+    .errors {
+      @extend %paragraph;
+      color: red; margin-bottom: 1em;
+    }
+  }
+  
+  .address {
+    @include span-columns(4 omega, 12);
+    padding-top: 3.5em;
+    h3 {
+      @extend %header_3;
+      color: $pink; margin-bottom: 0.2em;
+    }
+    p {
+      @extend %paragraph;
+      margin-bottom: 2em;
+    }
+    a { @extend %standard_link; }
+  }
+  
+  @include at-breakpoint($mobile_break) { 
+    .content {
+      @include span-columns(12, 12);
+      form {
+        input[type="text"], textarea {
+          width: 100%;
+        }
+      }
+      //float: none;
+    }
+    .address {
+      @include span-columns(12, 12);
+      padding: 3.5em;
+      //float: none;
+    }
+  }
+  
+}

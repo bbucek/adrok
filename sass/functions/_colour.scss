@@ -1,0 +1,6 @@
+//*
+// Black lightnes adjust
+//  use in css to adjust lightness of black
+//  e.x. color: black(15);
+//*
+@function black($n) { @return adjust-lightness(black,$n); }
